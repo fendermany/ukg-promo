@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head-fix.htm',{ "title":"Кабинет - Пополнение" })
+	<body class="cabinet">
+		<div class="cabinet__wrapper">
+			@@include('html/_cabinet-aside.htm',{})
+			<div class="wrapper">
+				<main class="page">
+					@@include('html/_cabinet-header.htm',{})
+					@@include('html/_cabinet-topbar.htm',{})
+					<div class="cabtopup">
+						<div class="cabtopup__wrapper">
+							<div class="cabtopup__title cabinet__title_36">Пополнение</div>
+							<div class="cabtopup__inner">
+								<ul class="cabtopup__body">
+									<li class="cabtopup__item">
+										<label for="status">Статус</label>
+										<div class="cabtopup__input-wrapper">
+											<input
+												disabled
+												autocomplete="off"
+												type="text"
+												name="status"
+												value="Ожидает подтверждения"
+												class="cabtopup__input"
+											/>
+										</div>
+									</li>
+									<li class="cabtopup__item">
+										<label for="status">Платежная система</label>
+										<div class="cabtopup__input-wrapper">
+											<input
+												disabled
+												autocomplete="off"
+												type="text"
+												name="status"
+												value="Bitcoin"
+												class="cabtopup__input"
+											/>
+										</div>
+									</li>
+									<li class="cabtopup__item">
+										<label for="status">Дата</label>
+										<div class="cabtopup__input-wrapper">
+											<input
+												disabled
+												autocomplete="off"
+												type="text"
+												name="status"
+												value="12.10.2021 14:15:25"
+												class="cabtopup__input"
+											/>
+										</div>
+									</li>
+									<li class="cabtopup__item">
+										<label for="status">Сумма</label>
+										<div class="cabtopup__input-wrapper">
+											<input
+												disabled
+												autocomplete="off"
+												type="text"
+												name="status"
+												value="10 000 BTC"
+												class="cabtopup__input"
+											/>
+										</div>
+									</li>
+									<li class="cabtopup__item">
+										<label for="status">Реквизиты для оплаты</label>
+										<div class="cabtopup__input-wrapper">
+											<input
+												disabled
+												autocomplete="off"
+												type="text"
+												name="status"
+												value="161AEyUD9WzJ3cZnjQqg621ewANyKWuvaQ"
+												class="cabtopup__input"
+											/>
+											<img
+												src="@img/cabinet/topup-copy.svg"
+												alt="Реквизиты для оплаты"
+											/>
+										</div>
+									</li>
+								</ul>
+								<div class="cabtopup__qr">
+									<img src="@img/cabinet/qr.png" alt="QR код" />
+								</div>
+								<div class="cabtopup__footer">
+									<div class="cabtopup__footer-descr">
+										Для пополнения баланса совершите транзакцию по указанным
+										реквизитам, либо воскользуйтесь <span>qr-кодом</span>
+									</div>
+									<button
+										type="submit"
+										class="cabtopup__footer-button button button_gold"
+									>
+										ОТМЕНИТЬ
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</main>
+				@@include('html/_footer-fix.htm',{})
+			</div>
+		</div>
+		@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+	</body>
+</html>

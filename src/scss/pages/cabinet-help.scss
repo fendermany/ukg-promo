@@ -1,0 +1,253 @@
+.cabhelp {
+	margin-top: 27px;
+	/* .cabhelp__wrapper */
+	&__wrapper {
+		display: grid;
+		grid-template: 402px 506px / 1fr 1fr;
+		column-gap: 27px;
+		row-gap: 32px;
+	}
+
+	/* .cabhelp__form */
+	&__form {
+		grid-column: 1/2;
+		grid-row: 1/2;
+		background: linear-gradient(
+			92.35deg,
+			#b48a3d 9.32%,
+			#fcecce 50.74%,
+			#ccab6c 95.84%
+		);
+		border-radius: 10px;
+		padding: 1px;
+		.options {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			& > * + * {
+				margin-left: 51px;
+			}
+			/* .options__item */
+			&__item {
+			}
+
+			/* .options__input */
+			&__input {
+			}
+
+			/* .options__label */
+			&__label {
+				&::before {
+					width: 9px;
+					height: 9px;
+					border: 1px solid #484848;
+					flex: 0 0 9px;
+				}
+				&::after {
+					left: 2px;
+					top: 3px;
+					width: 5px;
+					height: 5px;
+					background: linear-gradient(
+						92.35deg,
+						#b48a3d 9.32%,
+						#fcecce 50.74%,
+						#ccab6c 95.84%
+					);
+				}
+			}
+
+			/* .options__text */
+			&__text {
+			}
+		}
+	}
+
+	/* .cabhelp__form-wrapper */
+	&__form-wrapper {
+		background: black;
+		border-radius: 10px;
+		height: 100%;
+		padding: 30px 34px 40px 34px;
+	}
+
+	/* .cabhelp__form-title */
+	&__form-title {
+	}
+
+	/* .cabhelp__form-options */
+	&__form-options {
+		margin-top: 20px;
+		font-size: 12px;
+		line-height: 12px;
+		color: #7a7a7a;
+	}
+
+	/* .cabhelp__form-subtitle */
+	&__form-subtitle {
+		margin-top: 22px;
+		font-size: 16px;
+		line-height: 17px;
+	}
+
+	/* .cabhelp__form-form */
+	&__form-form {
+		margin-top: 14px;
+	}
+
+	/* .cabhelp__form-textarea */
+	&__form-textarea {
+		border: 1px solid #484848;
+		border-radius: 9px;
+		height: 121px;
+		width: 100%;
+		background: transparent;
+		color: #fff;
+		padding: 20px;
+	}
+
+	&__form-button {
+		margin-top: 31px;
+		width: 205px;
+		height: 51px;
+	}
+
+	/* .cabhelp__history */
+	&__history {
+		grid-column: 1/2;
+		grid-row: 2/3;
+		padding: 35px 85px 35px 35px;
+		overflow-y: auto;
+		li + li {
+			margin-top: 29px;
+		}
+	}
+
+	/* .cabhelp__history-item */
+	&__history-item {
+		padding-bottom: 21px;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	}
+
+	/* .cabhelp__history-title */
+	&__history-title {
+		font-size: 14px;
+		line-height: 16px;
+		color: #7a7a7a;
+	}
+
+	/* .cabhelp__history-body */
+	&__history-body {
+		font-size: 16px;
+		line-height: 23px;
+		margin-top: 11px;
+	}
+
+	/* .cabhelp__faq */
+	&__faq {
+		grid-column: 2/3;
+		grid-row: 1/3;
+		background: linear-gradient(
+			92.35deg,
+			#b48a3d 9.32%,
+			#fcecce 50.74%,
+			#ccab6c 95.84%
+		);
+		border-radius: 10px;
+		padding: 1px;
+	}
+	&__faq-wrapper {
+		background: black;
+		border-radius: 10px;
+		height: 100%;
+		padding: 30px 35px 50px 35px;
+	}
+
+	/* .cabhelp__faq-top */
+	&__faq-top {
+		display: grid;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+		grid-template: 1fr / 1fr 1fr;
+		gap: 45px;
+		&::before {
+			content: '';
+			position: absolute;
+			left: 50%;
+			top: 0;
+			transform: translateX(-50%);
+			background-color: rgba(255, 255, 255, 0.2);
+			width: 1px;
+			height: 100%;
+		}
+	}
+
+	/* .cabhelp__faq-title */
+	&__faq-title {
+	}
+
+	/* .cabhelp__faq-subtitle */
+	&__faq-subtitle {
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 14px;
+		white-space: nowrap;
+	}
+
+	/* .cabhelp__faq-list */
+	&__faq-list {
+		margin-top: 26px;
+		li + li {
+			margin-top: 20px;
+		}
+	}
+
+	/* .cabhelp__faq-item */
+	&__faq-item {
+		background: rgba(255, 255, 255, 0.05);
+		box-shadow: 0px 4px 73px #000000;
+	}
+
+	/* .cabhelp__faq-question */
+	&__faq-question {
+		display: flex;
+		align-items: center;
+		height: 70px;
+		padding: 17px 22px;
+		cursor: pointer;
+		& > div {
+			margin-right: 16px;
+			&:first-child {
+				background: linear-gradient(
+					92.35deg,
+					#b48a3d 9.32%,
+					#fcecce 50.74%,
+					#ccab6c 95.84%
+				);
+				border-radius: 50%;
+				padding: 1px;
+				width: 35px;
+				height: 35px;
+				& > span {
+					background: #000;
+					border-radius: 50%;
+					font-size: 15px;
+					line-height: 23px;
+					width: 100%;
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+		}
+	}
+
+	/* .cabhelp__faq-answer */
+	&__faq-answer {
+		font-size: 16px;
+		line-height: 23px;
+		text-transform: uppercase;
+	}
+}

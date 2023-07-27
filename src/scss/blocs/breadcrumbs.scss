@@ -1,0 +1,34 @@
+.breadcrumbs {
+	@include adaptiveValue('margin-top', 44, 33);
+	/* .breadcrumbs__list */
+	&__list {
+		display: flex;
+		align-items: center;
+		li {
+			list-style: none;
+			font-size: 14px;
+			line-height: 16px;
+			padding-left: 11px;
+			border-right: 1px solid #ADADAD;
+			color: #ADADAD;
+			&:first-child {
+				font-weight: 300;
+				padding-left: 0;
+				padding-right: 11px;
+				position: relative;
+				&::before{
+					content:'';
+					width: calc(100% - 11px);
+					bottom: -3px;
+					position: absolute;
+					left: 0;
+					height: 1px;
+					background: linear-gradient(92.35deg, #B48A3D 9.32%, #FCECCE 50.74%, #CCAB6C 95.84%);
+				}
+			}
+			&:last-child{
+				border: none;
+			}
+		}
+	}
+}

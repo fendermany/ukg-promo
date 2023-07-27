@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head-fix.htm',{ "title":"Кабинет - Помощь" })
+	<body class="cabinet">
+		<div class="cabinet__wrapper">
+			@@include('html/_cabinet-aside.htm',{})
+			<div class="wrapper">
+				<main class="page">
+					@@include('html/_cabinet-header.htm',{})
+					@@include('html/_cabinet-topbar.htm',{})
+					<div class="cabhelp">
+						<div class="cabhelp__wrapper">
+							<div class="cabhelp__form">
+								<div class="cabhelp__form-wrapper">
+									<div class="cabhelp__form-title cabinet__title_36">
+										Помощь
+									</div>
+									<div class="cabhelp__form-options options">
+										<div class="options__item">
+											<input
+												hidden
+												id="o_1"
+												class="options__input"
+												checked
+												type="radio"
+												value="1"
+												name="option"
+											/>
+											<label for="o_1" class="options__label"
+												><span class="options__text"
+													>Technical questions</span
+												></label
+											>
+										</div>
+										<div class="options__item">
+											<input
+												hidden
+												id="o_2"
+												class="options__input"
+												type="radio"
+												value="2"
+												name="option"
+											/>
+											<label for="o_2" class="options__label"
+												><span class="options__text"
+													>Financial questions</span
+												></label
+											>
+										</div>
+									</div>
+									<div class="cabhelp__form-subtitle">Введите сообщение:</div>
+									<form action="#" class="cabhelp__form-form">
+										<div class="form__line">
+											<textarea
+												class="cabhelp__form-textarea input"
+												autocomplete="off"
+												type="text"
+												name="help"
+											></textarea>
+										</div>
+										<button
+											type="submit"
+											class="cabhelp__form-button button button_gold"
+										>
+											Сохранить
+										</button>
+									</form>
+								</div>
+							</div>
+							<ul class="cabhelp__history grey-block-dark-414">
+								<li class="cabhelp__history-item">
+									<div class="cabhelp__history-title">Вопрос</div>
+									<div class="cabhelp__history-body">
+										Я сделал звонок в клиентскую поддержку, но не получил
+										консультацию. Что я делаю не так?
+									</div>
+								</li>
+								<li class="cabhelp__history-item">
+									<div class="cabhelp__history-title">Вопрос</div>
+									<div class="cabhelp__history-body">
+										Я сделал звонок в клиентскую поддержку, но не получил
+										консультацию. Что я делаю не так?
+									</div>
+								</li>
+								<li class="cabhelp__history-item">
+									<div class="cabhelp__history-title">Вопрос</div>
+									<div class="cabhelp__history-body">
+										Я сделал звонок в клиентскую поддержку, но не получил
+										консультацию. Что я делаю не так?
+									</div>
+								</li>
+								<li class="cabhelp__history-item">
+									<div class="cabhelp__history-title">Вопрос</div>
+									<div class="cabhelp__history-body">
+										Я сделал звонок в клиентскую поддержку, но не получил
+										консультацию. Что я делаю не так?
+									</div>
+								</li>
+								<li class="cabhelp__history-item">
+									<div class="cabhelp__history-title">Вопрос</div>
+									<div class="cabhelp__history-body">
+										Я сделал звонок в клиентскую поддержку, но не получил
+										консультацию. Что я делаю не так?
+									</div>
+								</li>
+								<li class="cabhelp__history-item">
+									<div class="cabhelp__history-title">Вопрос</div>
+									<div class="cabhelp__history-body">
+										Я сделал звонок в клиентскую поддержку, но не получил
+										консультацию. Что я делаю не так?
+									</div>
+								</li>
+							</ul>
+							<div class="cabhelp__faq">
+								<div class="cabhelp__faq-wrapper">
+									<div class="cabhelp__faq-top">
+										<div class="cabhelp__faq-title cabinet__title_36">
+											Общие вопросы
+										</div>
+										<div class="cabhelp__faq-subtitle">
+											Не нашли ответа на интересующий вопрос?<br />
+											Напишите нам и мы вам ответим
+											<span class="gold">support@com.ua</span>
+										</div>
+									</div>
+									<ul class="cabhelp__faq-list">
+										<li class="cabhelp__faq-item">
+											<div class="cabhelp__faq-question">
+												<div>
+													<span><span class="gold">?</span></span>
+												</div>
+												<span>Чем занимается UKG?</span>
+											</div>
+											<div class="cabhelp__faq-answer"></div>
+										</li>
+										<li class="cabhelp__faq-item">
+											<div class="cabhelp__faq-question">
+												<div>
+													<span><span class="gold">?</span></span>
+												</div>
+												<span>Законна ли деятельность компании?</span>
+											</div>
+											<div class="cabhelp__faq-answer"></div>
+										</li>
+										<li class="cabhelp__faq-item">
+											<div class="cabhelp__faq-question">
+												<div>
+													<span><span class="gold">?</span></span>
+												</div>
+												<span>Чем занимается UKG?</span>
+											</div>
+											<div class="cabhelp__faq-answer"></div>
+										</li>
+										<li class="cabhelp__faq-item">
+											<div class="cabhelp__faq-question">
+												<div>
+													<span><span class="gold">?</span></span>
+												</div>
+												<span>Законна ли деятельность компании?</span>
+											</div>
+											<div class="cabhelp__faq-answer"></div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</main>
+				@@include('html/_footer-fix.htm',{})
+			</div>
+		</div>
+		@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+	</body>
+</html>

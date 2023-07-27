@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head-fix.htm',{ "title":"Кабинет - Вход" })
+	<body class="cabinet">
+		<div class="wrapper">
+			<main class="page">
+				<div class="cabinet__container">
+					<div class="cabinet__logo">
+						<img src="@img/logo/logo.svg" alt="Вход личный кабинет" />
+					</div>
+					<div class="cabinet__form">
+						<div class="cabinet__form-wrapper">
+							<div class="cabinet__form-title gold">Вход личный кабинет</div>
+							<form action="#" class="cabinet__form-form">
+								<div class="cabinet__form-line">
+									<input
+										autocomplete="off"
+										type="text"
+										name="login"
+										placeholder="Ваша почта или логин"
+										class="cabinet__form-input"
+									/>
+								</div>
+								<div class="cabinet__form-line">
+									<input
+										autocomplete="off"
+										type="password"
+										name="password"
+										placeholder="Ваш пароль"
+										class="cabinet__form-input"
+									/>
+								</div>
+								<button class="cabinet__form-btn button button_gold">
+									Войти
+								</button>
+							</form>
+							<div class="cabinet__form-links">
+								<a href="#">Регистрация</a>
+								<a href="#">Забыли пароль?</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			@@include('html/_footer-fix.htm',{})
+		</div>
+		@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+	</body>
+</html>
