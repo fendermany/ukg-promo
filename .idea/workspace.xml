@@ -4,104 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d8a7436-f85c-4365-97f7-f5ee1580189e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/html/_cabinet-reflvl.htm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/cabinet/managerLevelBlock/10.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/cabinet/managerLevelBlock/11.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/cabinet/managerLevelBlock/12.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/cabinet/managerLevelBlock/2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/cabinet/managerLevelBlock/3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/cabinet/managerLevelBlock/4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/cabinet/managerLevelBlock/5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/cabinet/managerLevelBlock/6.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/cabinet/managerLevelBlock/7.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/cabinet/managerLevelBlock/8.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/cabinet/managerLevelBlock/9.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/gulp-plugins.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/gulp-settings.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/gulp-tasks/css.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/gulp-tasks/fonts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/gulp-tasks/ftp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/gulp-tasks/gitignore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/gulp-tasks/html.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/gulp-tasks/images.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/gulp-tasks/js-dev.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/gulp-tasks/js.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/gulp-tasks/reset.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/gulp-tasks/sprite.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/gulp-tasks/zip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.dev.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.prod.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/cabinet-affiliate.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/cabinet-affiliate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/cabinet-help.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/cabinet-help.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/cabinet-home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/cabinet-investments.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/cabinet-investments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/cabinet-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/cabinet-profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/cabinet-promotional.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/cabinet-promotional.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/cabinet-recovery.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/cabinet-recovery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/cabinet-registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/cabinet-registration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/cabinet-signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/cabinet-signin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/cabinet-token.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/cabinet-token.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/cabinet-topup.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/cabinet-topup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/documents.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/documents.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/app.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/app.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/partner.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/partner.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/partners.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/partners.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/production.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/production.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/referral.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/referral.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/token.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/token.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cabinet-affiliate.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cabinet-affiliate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cabinet-help.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cabinet-help.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cabinet-home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cabinet-investments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cabinet-investments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cabinet-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cabinet-profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cabinet-promotional.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cabinet-promotional.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cabinet-recovery.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cabinet-recovery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cabinet-registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cabinet-registration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cabinet-signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cabinet-signin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cabinet-token.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cabinet-token.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cabinet-topup.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cabinet-topup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/documents.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/documents.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/_cabinet-aside.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_cabinet-aside.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/_cabinet-header.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_cabinet-header.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/_footer-fix.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_footer-fix.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/_footer.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_footer.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/_head-fix.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_head-fix.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/_head.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_head.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/_header.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_header.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/files/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/files/sliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/sliders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/libs/select.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/libs/select.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partner.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partner.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/production.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/production.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/referral.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/referral.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/base/forms/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/forms/button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/base/forms/select.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/forms/select.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/base/null.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/null.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocs/cabinet-aside.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocs/cabinet-aside.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocs/cabinet-forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocs/cabinet-forms.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocs/cabinet-reflvl.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocs/cabinet-reflvl.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/pages/cabinet-help.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/cabinet-help.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/pages/cabinet-home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/cabinet-home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/pages/cabinet-investments.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/cabinet-investments.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/pages/cabinet-promotional.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/cabinet-promotional.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/token.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/token.html" afterDir="false" />
+    <list default="true" id="1d8a7436-f85c-4365-97f7-f5ee1580189e" name="Changes" comment="fixes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,8 +97,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690446749972</updated>
-      <workItem from="1690446751546" duration="21727000" />
+      <workItem from="1690446751546" duration="22729000" />
     </task>
+    <task id="LOCAL-00001" summary="fixes">
+      <created>1690469600389</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690469600389</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fixes">
+      <created>1690469604704</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690469604704</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,5 +121,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
   </component>
 </project>
