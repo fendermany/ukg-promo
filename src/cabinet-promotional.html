@@ -1,75 +1,76 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('html/_head-fix.htm',{ "title":"Кабинет - Рекламные материалы" })
-	<body class="cabinet">
-		<div class="cabinet__wrapper">
-			@@include('html/_cabinet-aside.htm',{})
-			<div class="wrapper">
-				<main class="page">
-					@@include('html/_cabinet-header.htm',{})
-					@@include('html/_cabinet-topbar.htm',{})
-					<div class="cabpromo">
-						<div class="cabpromo__title">
-							Рекламные <span class="gold">материалы</span>
-						</div>
-						<div class="cabpromo__link">
-							<div class="cabpromo__link-wrapper">
-								<label for="reflink">ВАША РЕФЕРАЛЬНАЯ ССЫЛКА: </label>
-								<input
-									disabled
-									autocomplete="off"
-									type="text"
-									name="reflink"
-									value="https://demo.chyip.com/ethnicfinance2/?reg=zzzzz"
-									class="input"
-								/>
-								<button
-									type="submit"
-									class="cabpromo__link-button button button_gold"
-								>
-									Скопировать
-								</button>
-							</div>
-						</div>
-						<div data-tabs class="cabpromo__tabs">
-							<nav data-tabs-titles class="cabpromo__tabs-navigation">
-								<button type="button" class="cabpromo__tabs-title _tab-active">
-									ВИДЕОПРЕЗЕНТАЦИЯ
-								</button>
-								<button type="button" class="cabpromo__tabs-title">
-									PDF презентация
-								</button>
-								<button type="button" class="cabpromo__tabs-title">
-									Интро
-								</button>
-								<button type="button" class="cabpromo__tabs-title">
-									Аутро
-								</button>
-								<button type="button" class="cabpromo__tabs-title">
-									Логотипы
-								</button>
-								<button type="button" class="cabpromo__tabs-title">
-									Brand wall
-								</button>
-								<button type="button" class="cabpromo__tabs-title">
-									Фирменные обои
-								</button>
-							</nav>
-							<div data-tabs-body class="cabpromo__tabs-content">
-								<div class="cabpromo__tabs-body"></div>
-								<div class="cabpromo__tabs-body"></div>
-								<div class="cabpromo__tabs-body"></div>
-								<div class="cabpromo__tabs-body"></div>
-								<div class="cabpromo__tabs-body"></div>
-								<div class="cabpromo__tabs-body"></div>
-								<div class="cabpromo__tabs-body"></div>
-							</div>
-						</div>
-					</div>
-				</main>
-				@@include('html/_footer-fix.htm',{})
-			</div>
-		</div>
-		@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
-	</body>
+@@include('html/_head-fix.htm',{ "title":"Кабинет - Рекламные материалы" })
+<body class="cabinet">
+<div class="cabinet__wrapper">
+    @@include('html/_cabinet-aside.htm',{})
+    <div class="wrapper">
+        <main class="page">
+            @@include('html/_cabinet-header.htm',{})
+            @@include('html/_cabinet-topbar.htm',{})
+            <div class="cabpromo">
+                <div class="cabpromo__title">
+                    Рекламные <span class="gold">материалы</span>
+                </div>
+                <div class="cabpromo__link">
+                    <div class="cabpromo__link-wrapper">
+                        <label for="reflink">ВАША РЕФЕРАЛЬНАЯ ССЫЛКА: </label>
+                        <input
+                                autocomplete="off"
+                                type="text"
+                                name="reflink"
+                                value="https://demo.chyip.com/ethnicfinance2/?reg=zzzzz"
+                                class="input pointer-events-none"
+                                id="copy-input2"
+                        />
+                        <button
+                                id="copy"
+                                type="submit"
+                                class="cabpromo__link-button button button_gold copy"
+                        >
+                            Скопировать
+                        </button>
+                    </div>
+                </div>
+                <div data-tabs class="cabpromo__tabs">
+                    <nav data-tabs-titles class="cabpromo__tabs-navigation">
+                        <button type="button" class="cabpromo__tabs-title _tab-active">
+                            ВИДЕОПРЕЗЕНТАЦИЯ
+                        </button>
+                        <button type="button" class="cabpromo__tabs-title">
+                            PDF презентация
+                        </button>
+                        <button type="button" class="cabpromo__tabs-title">
+                            Интро
+                        </button>
+                        <button type="button" class="cabpromo__tabs-title">
+                            Аутро
+                        </button>
+                        <button type="button" class="cabpromo__tabs-title">
+                            Логотипы
+                        </button>
+                        <button type="button" class="cabpromo__tabs-title">
+                            Brand wall
+                        </button>
+                        <button type="button" class="cabpromo__tabs-title">
+                            Фирменные обои
+                        </button>
+                    </nav>
+                    <div data-tabs-body data-tabs-hash class="cabpromo__tabs-content">
+                        <div class="cabpromo__tabs-body"></div>
+                        <div class="cabpromo__tabs-body"></div>
+                        <div class="cabpromo__tabs-body"></div>
+                        <div class="cabpromo__tabs-body"></div>
+                        <div class="cabpromo__tabs-body"></div>
+                        <div class="cabpromo__tabs-body"></div>
+                        <div class="cabpromo__tabs-body"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        @@include('html/_footer-fix.htm',{})
+    </div>
+</div>
+@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</body>
 </html>

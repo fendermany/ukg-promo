@@ -6,10 +6,11 @@
 	<meta charset="UTF-8" />
 	<meta name="format-detection" content="telephone=no" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221214145754" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230727174621" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=1660" />
+	<script src="https://cdn.tailwindcss.com?_v=20230727174621"></script>
 </head>
 
 <body class="cabinet">
@@ -22,20 +23,20 @@
 				<span>Добро пожаловать</span>
 				<div class="cabinet__aside-welcome--name gold">Artem</div>
 				<span>Ваша реферальная ссылка</span>
-				<button class="gold">
-					<span>https://google.com/awdawdawdawdawda</span>
+				<button id="copy" class="gold flex items-center space-x-1 copy">
+					<input autocomplete="off" type="text" name="reflink" value="https://demo.chyip.com/ethnicfinance2/?reg=zzzzz" class="pointer-events-none bg-transparent" id="copy-input" />
 					<img src="img/cabinet/copy.svg" alt="copy" />
 				</button>
 			</div>
 			<nav class="cabinet__aside-menu">
 				<ul>
-					<li class="_active"><a href="#">Главная страница</a></li>
-					<li><a href="#">Ивестиции</a></li>
-					<li><a href="#">Токен</a></li>
-					<li><a href="#">Партнерская программа</a></li>
-					<li><a href="#">Мой профиль</a></li>
-					<li><a href="#">Рекламные материалы</a></li>
-					<li><a href="#">Помощь</a></li>
+					<li class="_active"><a href="index.html">Главная страница</a></li>
+					<li><a href="cabinet-investments.html">Ивестиции</a></li>
+					<li><a href="cabinet-token.html">Токен</a></li>
+					<li><a href="cabinet-affiliate.html">Партнерская программа</a></li>
+					<li><a href="cabinet-profile.html">Мой профиль</a></li>
+					<li><a href="cabinet-promotional.html">Рекламные материалы</a></li>
+					<li><a href="cabinet-help.html">Помощь</a></li>
 				</ul>
 			</nav>
 		</aside>
@@ -44,11 +45,11 @@
 			<main class="page">
 				<div class="cabinet__header">
 					<div class="cabinet__header-btns">
-						<a href="#" class="cabinet__header-btns--settings gold">
+						<a href="cabinet-profile.html" class="cabinet__header-btns--settings gold">
 							<img src="img/cabinet/settings.svg" alt="settings" />
 							<span>Настройки</span>
 						</a>
-						<a href="#" class="cabinet__header-btns--exit gold">
+						<a href="cabinet-signin.html" class="cabinet__header-btns--exit gold">
 							<img src="img/cabinet/exit.svg" alt="exit" />
 							<span>Выход</span>
 						</a>
@@ -78,16 +79,16 @@
 								</li>
 							</ul>
 						</div>
-						<div class="cabinet__header-lang lang">
-							<img src="img/icons/arrow-down-small.svg" alt="arrow-down-lang" />
-							<select name="lang__list" class="lang__list">
-								<option value="1" selected>Ru</option>
-								<option value="2">Eng</option>
-							</select>
+						<!--        <div class="cabinet__header-lang lang w-10">-->
+						<!--            <img src="img/icons/arrow-down-small.svg" alt="arrow-down-lang"/>-->
+						<!--            <select name="lang__list" class="lang__list">-->
+						<!--                <option value="1" selected>Ru</option>-->
+						<!--                <option value="2">Eng</option>-->
+						<!--            </select>-->
+						<!--        </div>-->
+						<div id="clock" class="cabinet__header-time w-40">
+							<!-- Current date and time will be displayed here -->
 						</div>
-						<time datetime="2001-05-15 19:00" class="cabinet__header-time">
-							01 ДЕК 2021 16 : 29
-						</time>
 					</div>
 				</div>
 
@@ -220,12 +221,12 @@
 									Введите сумму пополнения
 								</div>
 								<div class="cabtoken__topup-line">
-									<input autocomplete="off" type="text" name="topup" class="cabtoken__topup-input" />
+									<input autocomplete="off" type="text" name="topup" class="cabtoken__topup-input focus:outline-none" />
 									<img src="img/cabinet/cg-white.svg" alt="Пополнить токены" />
 								</div>
-								<button type="submit" class="cabtoken__topup-button button button_gold">
+								<a href="/cabinet-topup.html" class="cabtoken__topup-button button button_gold">
 									Пополнить баланс
-								</button>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -238,21 +239,18 @@
 					</div>
 					<nav class="footer__menu">
 						<ul>
-							<li><a href="#">О компании</a></li>
-							<li><a href="#">Партнерам</a></li>
-							<li><a href="#">Online</a></li>
-							<li><a href="#">Инвесторам</a></li>
-							<li><a href="#">Производство</a></li>
-							<li><a href="#">Контакты</a></li>
+							<li><a href="https://www.ukgholding.com/about">О компании</a></li>
+							<li><a href="https://www.ukgholding.com/partners">Партнерам</a></li>
+							<li><a href="https://www.ukgholding.com/online">Online</a></li>
+							<li><a href="https://www.ukgholding.com/investors">Инвесторам</a></li>
+							<li><a href="https://www.ukgholding.com/production">Производство</a></li>
+							<li><a href="https://www.ukgholding.com/contacts">Контакты</a></li>
 						</ul>
 					</nav>
 					<div class="footer__contacts">
 						<div class="footer__contacts-title footer__title">Контакты</div>
-						<div class="footer__contacts-body">
-							Венгрией и другими европейскими странами.
-						</div>
-						<a href="mailto:support@u-kg.com" class="footer__contacts-email gold">
-							support@u-kg.com
+						<a href="mailto:UKGholding@gmail.com" class="footer__contacts-email gold">
+							UKGholding@gmail.com
 						</a>
 					</div>
 					<div class="footer__feedback">
@@ -289,19 +287,19 @@
 						</ul>
 					</div>
 					<div class="footer__copyright">
-						<span>“U-KG Holding” LLC 2021 © Все права защищены</span>
+						<span>“UKG Holding” 2023 © Все права защищены</span>
 						<a href="#" class="footer__terms gold">Правила и соглашения</a>
 					</div>
-					<button class="footer__btn button button_transparent">
+					<a href="cabinet-help.html" class="footer__btn button button_transparent">
 						<div><span>Обратная связь</span></div>
-					</button>
-					<div class="footer__lang lang">
-						<img src="img/icons/arrow-down-small.svg" alt="arrow-down-lang" />
-						<select name="lang__list" class="lang__list">
-							<option value="1" selected>Ru</option>
-							<option value="2">Eng</option>
-						</select>
-					</div>
+					</a>
+					<!--        <div class="footer__lang lang">-->
+					<!--            <img src="img/icons/arrow-down-small.svg" alt="arrow-down-lang"/>-->
+					<!--            <select name="lang__list" class="lang__list">-->
+					<!--                <option value="1" selected>Ru</option>-->
+					<!--                <option value="2">Eng</option>-->
+					<!--            </select>-->
+					<!--        </div>-->
 				</div>
 			</footer>
 
@@ -318,7 +316,7 @@
 	</div>
 </div>
  -->
-	<script src="js/app.min.js?_v=20221214145754"></script>
+	<script src="js/app.min.js?_v=20230727174621"></script>
 </body>
 
 </html>

@@ -6,10 +6,11 @@
 	<meta charset="UTF-8" />
 	<meta name="format-detection" content="telephone=no" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221214145754" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230727174621" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=1660" />
+	<script src="https://cdn.tailwindcss.com?_v=20230727174621"></script>
 </head>
 
 <body class="cabinet">
@@ -22,20 +23,20 @@
 				<span>Добро пожаловать</span>
 				<div class="cabinet__aside-welcome--name gold">Artem</div>
 				<span>Ваша реферальная ссылка</span>
-				<button class="gold">
-					<span>https://google.com/awdawdawdawdawda</span>
+				<button id="copy" class="gold flex items-center space-x-1 copy">
+					<input autocomplete="off" type="text" name="reflink" value="https://demo.chyip.com/ethnicfinance2/?reg=zzzzz" class="pointer-events-none bg-transparent" id="copy-input" />
 					<img src="img/cabinet/copy.svg" alt="copy" />
 				</button>
 			</div>
 			<nav class="cabinet__aside-menu">
 				<ul>
-					<li class="_active"><a href="#">Главная страница</a></li>
-					<li><a href="#">Ивестиции</a></li>
-					<li><a href="#">Токен</a></li>
-					<li><a href="#">Партнерская программа</a></li>
-					<li><a href="#">Мой профиль</a></li>
-					<li><a href="#">Рекламные материалы</a></li>
-					<li><a href="#">Помощь</a></li>
+					<li class="_active"><a href="index.html">Главная страница</a></li>
+					<li><a href="cabinet-investments.html">Ивестиции</a></li>
+					<li><a href="cabinet-token.html">Токен</a></li>
+					<li><a href="cabinet-affiliate.html">Партнерская программа</a></li>
+					<li><a href="cabinet-profile.html">Мой профиль</a></li>
+					<li><a href="cabinet-promotional.html">Рекламные материалы</a></li>
+					<li><a href="cabinet-help.html">Помощь</a></li>
 				</ul>
 			</nav>
 		</aside>
@@ -44,11 +45,11 @@
 			<main class="page">
 				<div class="cabinet__header">
 					<div class="cabinet__header-btns">
-						<a href="#" class="cabinet__header-btns--settings gold">
+						<a href="cabinet-profile.html" class="cabinet__header-btns--settings gold">
 							<img src="img/cabinet/settings.svg" alt="settings" />
 							<span>Настройки</span>
 						</a>
-						<a href="#" class="cabinet__header-btns--exit gold">
+						<a href="cabinet-signin.html" class="cabinet__header-btns--exit gold">
 							<img src="img/cabinet/exit.svg" alt="exit" />
 							<span>Выход</span>
 						</a>
@@ -78,16 +79,16 @@
 								</li>
 							</ul>
 						</div>
-						<div class="cabinet__header-lang lang">
-							<img src="img/icons/arrow-down-small.svg" alt="arrow-down-lang" />
-							<select name="lang__list" class="lang__list">
-								<option value="1" selected>Ru</option>
-								<option value="2">Eng</option>
-							</select>
+						<!--        <div class="cabinet__header-lang lang w-10">-->
+						<!--            <img src="img/icons/arrow-down-small.svg" alt="arrow-down-lang"/>-->
+						<!--            <select name="lang__list" class="lang__list">-->
+						<!--                <option value="1" selected>Ru</option>-->
+						<!--                <option value="2">Eng</option>-->
+						<!--            </select>-->
+						<!--        </div>-->
+						<div id="clock" class="cabinet__header-time w-40">
+							<!-- Current date and time will be displayed here -->
 						</div>
-						<time datetime="2001-05-15 19:00" class="cabinet__header-time">
-							01 ДЕК 2021 16 : 29
-						</time>
 					</div>
 				</div>
 
@@ -311,22 +312,25 @@
 					<div class="cabaffpro__reflvl reflvl grey-block-dark-414">
 						<div class="cabaffpro__reflvl-wrapper reflvl__wrapper">
 							<ul class="reflvl__top">
-								<li>
+								<li class="flex items-center">
 									<span>Ваш реферальный уровень:</span>
 									<span class="gold">УРОВЕНЬ 6</span>
 								</li>
-								<li>
+								<li class="flex items-center">
 									<span>реферанльный бонус:</span>
-									<span class="gold">15%</span>
+									<span class="gold">12%</span>
 								</li>
-								<li>
+								<li class="flex items-center">
 									<span>ОБОРОТ:</span>
-									<span class="gold">7000$</span>
+									<span class="flex items-center space-x-1">
+										<span class="gold">50000</span>
+										<img src="img/cabinet/cg.svg" alt="lvl-1">
+									</span>
 								</li>
 							</ul>
 							<div class="reflvl__body">
 								<div class="reflvl__progress">
-									<span style="width: 794px"></span>
+									<span style="width: 614px"></span>
 								</div>
 								<div class="reflvl__thead gold">
 									<span>Уровень</span>
@@ -334,30 +338,8 @@
 									<span>Оборот</span>
 								</div>
 								<div class="reflvl__step">
-									<span>1 уровень</span>
-									<span class="gold">9%</span>
-									<span>
-										100
-										<img src="img/cabinet/cg-white.svg" alt="lvl-1" />
-									</span>
-									<span>
-										<img src="img/cabinet/ok-circle.svg" alt="done" />
-									</span>
-								</div>
-								<div class="reflvl__step">
 									<span>2 уровень</span>
-									<span class="gold">10%</span>
-									<span>
-										500
-										<img src="img/cabinet/cg-white.svg" alt="lvl-1" />
-									</span>
-									<span>
-										<img src="img/cabinet/ok-circle.svg" alt="done" />
-									</span>
-								</div>
-								<div class="reflvl__step">
-									<span>3 уровень</span>
-									<span class="gold">12%</span>
+									<span class="gold">8%</span>
 									<span>
 										1000
 										<img src="img/cabinet/cg-white.svg" alt="lvl-1" />
@@ -367,19 +349,8 @@
 									</span>
 								</div>
 								<div class="reflvl__step">
-									<span>4 уровень</span>
-									<span class="gold">13%</span>
-									<span>
-										2500
-										<img src="img/cabinet/cg-white.svg" alt="lvl-1" />
-									</span>
-									<span>
-										<img src="img/cabinet/ok-circle.svg" alt="done" />
-									</span>
-								</div>
-								<div class="reflvl__step">
-									<span>5 уровень</span>
-									<span class="gold">14%</span>
+									<span>3 уровень</span>
+									<span class="gold">9%</span>
 									<span>
 										5000
 										<img src="img/cabinet/cg-white.svg" alt="lvl-1" />
@@ -388,684 +359,271 @@
 										<img src="img/cabinet/ok-circle.svg" alt="done" />
 									</span>
 								</div>
+								<div class="reflvl__step">
+									<span>4 уровень</span>
+									<span class="gold">10%</span>
+									<span>
+										10000
+										<img src="img/cabinet/cg-white.svg" alt="lvl-1" />
+									</span>
+									<span>
+										<img src="img/cabinet/ok-circle.svg" alt="done" />
+									</span>
+								</div>
+								<div class="reflvl__step">
+									<span>5 уровень</span>
+									<span class="gold">11%</span>
+									<span>
+										25000
+										<img src="img/cabinet/cg-white.svg" alt="lvl-1" />
+									</span>
+									<span>
+										<img src="img/cabinet/ok-circle.svg" alt="done" />
+									</span>
+								</div>
 								<div class="reflvl__step _active">
 									<span>6 уровень</span>
-									<span class="gold">15%</span>
+									<span class="gold">12%</span>
 									<span>
-										7000
+										50000
 										<img src="img/cabinet/cg-white.svg" alt="lvl-1" />
 									</span>
 									<span> текущий </span>
 								</div>
 								<div class="reflvl__step">
 									<span>7 уровень</span>
-									<span class="gold">16%</span>
+									<span class="gold">13%</span>
 									<span>
-										10000
+										100000
 										<img src="img/cabinet/cg-white.svg" alt="lvl-1" />
 									</span>
 									<span>
 										<span>ОСТАЛОСЬ</span>
-										<span>10000</span>
+										<span>50000</span>
 									</span>
 								</div>
 								<div class="reflvl__step">
 									<span>8 уровень</span>
-									<span class="gold">17%</span>
+									<span class="gold">14%</span>
 									<span>
-										15000
+										250000
 										<img src="img/cabinet/cg-white.svg" alt="lvl-1" />
 									</span>
 									<span>
 										<span>ОСТАЛОСЬ</span>
-										<span>15000</span>
+										<span>200000</span>
 									</span>
 								</div>
 								<div class="reflvl__step">
 									<span>9 уровень</span>
-									<span class="gold">18%</span>
+									<span class="gold">15%</span>
 									<span>
-										20000
+										500000
 										<img src="img/cabinet/cg-white.svg" alt="lvl-1" />
 									</span>
 									<span>
 										<span>ОСТАЛОСЬ</span>
-										<span>20000</span>
+										<span>450000</span>
 									</span>
 								</div>
 								<div class="reflvl__step">
 									<span>10 уровень</span>
-									<span class="gold">19%</span>
+									<span class="gold">16%</span>
 									<span>
-										50000
+										100000
 										<img src="img/cabinet/cg-white.svg" alt="lvl-1" />
 									</span>
 									<span>
 										<span>ОСТАЛОСЬ</span>
-										<span>50000</span>
+										<span>950000</span>
 									</span>
 								</div>
 								<div class="reflvl__step">
 									<span>11 уровень</span>
-									<span class="gold">20%</span>
+									<span class="gold">17%</span>
 									<span>
-										50000
+										2500000
 										<img src="img/cabinet/cg-white.svg" alt="lvl-1" />
 									</span>
 									<span>
 										<span>ОСТАЛОСЬ</span>
-										<span>50000</span>
+										<span>2450000</span>
+									</span>
+								</div>
+								<div class="reflvl__step">
+									<span>12 уровень</span>
+									<span class="gold">18%</span>
+									<span>
+										5000000
+										<img src="img/cabinet/cg-white.svg" alt="lvl-1" />
+									</span>
+									<span>
+										<span>ОСТАЛОСЬ</span>
+										<span>4950000</span>
 									</span>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="cabaffpro__inner">
-						<div class="cabaffpro__statsys grey-block-dark-414">
-							<div class="cabaffpro__statsys-title cabinet__title">
-								СИСТЕМА <span class="gold">СТАТУСОВ</span>
-							</div>
-							<div class="cabaffpro__statsys-shortdescr gold">
-								В компании работает система статусов для мотивации и поощрения
-								лидеров . Принцип её работы достаточно прост:
-							</div>
-							<div class="cabaffpro__statsys-descr">
-								<p>
-									Система автоматически выставляет людей сверху - вниз, слева
-									- направо по 2м направлениям. Одно из которых, всегда
-									является командным. Таким образом, Ваши вышестоящие спонсоры
-									всегда будут наполнять командное направление своими людьми.
-								</p>
-								<p>
-									Все что вам останется - пригласить хотя бы одного партнера в
-									другое направление, чтобы закрылся цикл и Вы получили свой
-									бонус.
-								</p>
-							</div>
-							<table class="cabaffpro__statsys-table">
-								<thead>
-									<tr class="gold">
-										<th>Оборот с бинара</th>
-										<th>Статус</th>
-										<th>подарок</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>
-											<div>
-												<span class="gold">-</span>
-											</div>
-										</td>
-										<td>
-											<div>Manager 1</div>
-										</td>
-										<td>
-											<div><span class="gold">-</span></div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div>
-												<span>1 000</span>
-												<img src="img/cabinet/cg-white.svg" alt="Manager 2" />
-											</div>
-										</td>
-										<td>
-											<div>Manager 2</div>
-										</td>
-										<td>
-											<div>
-												<span class="gold">Бронзовый значок U-KG</span>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div>
-												<span>5 000</span>
-												<img src="img/cabinet/cg-white.svg" alt="Manager 2" />
-											</div>
-										</td>
-										<td>
-											<div>Manager 3</div>
-										</td>
-										<td>
-											<div>
-												<span class="gold">Серебряный значок U-KG</span>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div>
-												<span>10 000</span>
-												<img src="img/cabinet/cg-white.svg" alt="Manager 2" />
-											</div>
-										</td>
-										<td>
-											<div>Manager 4</div>
-										</td>
-										<td>
-											<div>
-												<span class="gold">Золотой значок U-KG</span>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div>
-												<span>25 000</span>
-												<img src="img/cabinet/cg-white.svg" alt="Manager 2" />
-											</div>
-										</td>
-										<td>
-											<div>Manager 5</div>
-										</td>
-										<td>
-											<div>
-												<span class="gold">Золотой значок U-KG с бриллиантом</span>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div>
-												<span>50 000</span>
-												<img src="img/cabinet/cg-white.svg" alt="Manager 2" />
-											</div>
-										</td>
-										<td>
-											<div>Manager 6</div>
-										</td>
-										<td>
-											<div>
-												<span class="gold">Золотая монета cg-white</span>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div>
-												<span>100 000</span>
-												<img src="img/cabinet/cg-white.svg" alt="Manager 2" />
-											</div>
-										</td>
-										<td>
-											<div>Manager 7</div>
-										</td>
-										<td>
-											<div>
-												<span class="gold">золотой слиток u-kg</span>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div>
-												<span>250 000</span>
-												<img src="img/cabinet/cg-white.svg" alt="Manager 2" />
-											</div>
-										</td>
-										<td>
-											<div>Manager 8</div>
-										</td>
-										<td>
-											<div>
-												<span class="gold">Золотые часы</span>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div>
-												<span>500 000</span>
-												<img src="img/cabinet/cg-white.svg" alt="Manager 9" />
-											</div>
-										</td>
-										<td>
-											<div>Manager 9</div>
-										</td>
-										<td>
-											<div>
-												<span class="gold">Перстень с бриллиантом</span>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div>
-												<span>1 000 000</span>
-												<img src="img/cabinet/cg-white.svg" alt="Manager 10" />
-											</div>
-										</td>
-										<td>
-											<div>Manager 10</div>
-										</td>
-										<td>
-											<div>
-												<span class="gold">Автомобиль премиум-класса</span>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div>
-												<span>2 500 000</span>
-												<img src="img/cabinet/cg-white.svg" alt="Manager 11" />
-											</div>
-										</td>
-										<td>
-											<div>Manager 11</div>
-										</td>
-										<td>
-											<div>
-												<span class="gold">Апартаменты у моря</span>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div>
-												<span>5 000 000</span>
-												<img src="img/cabinet/cg-white.svg" alt="Manager 12" />
-											</div>
-										</td>
-										<td>
-											<div>Manager 12</div>
-										</td>
-										<td>
-											<div>
-												<span class="gold">Вилла</span>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="cabaffpro__turnover grey-block-dark-414">
-							<img src="img/cabinet/turn-bg.svg" alt="Обороты" />
-							<div class="cabaffpro__turnover-top">
-								<div class="cabaffpro__turnover-title cabinet__title">
-									Оборот <span class="gold">левой ветки</span>
+					<div class="cabaffpro__reflvl reflvl grey-block-dark-414">
+						<div class="cabaffpro__reflvl-wrapper reflvl__wrapper">
+							<ul class="reflvl__top uppercase text-xl">
+								СИСТЕМА&nbsp;<span class="gold">СТАТУСОВ</span>
+							</ul>
+							<div class="reflvl__body">
+								<div class="reflvl__progress">
+									<span style="width: 713px"></span>
 								</div>
-								<div class="cabaffpro__turnover-title cabinet__title">
-									Оборот <span class="gold">правой ветки</span>
+								<div class="reflvl__thead gold">
+									<span>Статус</span>
+									<span>Подарок</span>
+									<span>Оборот</span>
 								</div>
-							</div>
-							<div class="cabaffpro__turnover-stats gold">
-								<span>+ 10 000</span>
-								<span>Artem</span>
-								<span>0</span>
-							</div>
-							<div class="cabaffpro__turnover-wrapper">
-								<div class="cabaffpro__turnover-main">
-									<div class="cabaffpro__turnover-main--inner">
-										<img src="img/cabinet/user.svg" alt="Artem" />
-										<span class="gold">+ 10 000</span>
-										<span>Ваш оборот</span>
-									</div>
+								<div class="reflvl__step">
+									<span>МЕНЕДЖЕР 2</span>
+									<span class="h-[16px]">
+										<img src="img/cabinet/managerLevelBlock/2.svg" alt="МЕНЕДЖЕР 2" />
+									</span>
+									<span>
+										1 000
+										<img src="img/cabinet/cg-white.svg" alt="МЕНЕДЖЕР 2" />
+									</span>
+									<span>
+										<img src="img/cabinet/ok-circle.svg" alt="done" />
+									</span>
 								</div>
-								<div class="cabaffpro__turnover-left">
-									<img src="img/cabinet/turnover-left.svg" alt="Левая ветка" />
-									<div class="cabaffpro__turnover-left--title gold">
-										Левая ветка
-									</div>
-									<ul class="cabaffpro__turnover-left--list">
-										<li>
-											<div>
-												<img src="img/cabinet/turn-avatar.svg" alt="Vitaly Dmitriev" />
-												<span class="gold">Vitaly Dmitriev</span>
-											</div>
-										</li>
-										<li>
-											<div>
-												<img src="img/cabinet/turn-avatar.svg" alt="Vitaly Dmitriev" />
-												<span class="gold">Vitaly Dmitriev</span>
-											</div>
-										</li>
-										<li>
-											<div>
-												<img src="img/cabinet/turn-avatar.svg" alt="Vitaly Dmitriev" />
-												<span class="gold">Vitaly Dmitriev</span>
-											</div>
-										</li>
-										<li>
-											<div>
-												<img src="img/cabinet/turn-avatar.svg" alt="Vitaly Dmitriev" />
-												<span class="gold">Vitaly Dmitriev</span>
-												<div class="cabaffpro__turnover-hover">
-													<span class="gold">Vitaliy27</span>
-													<a href="mailto:customer@gmail.com">customer@gmail.com</a>
-													<div>оборот<span class="gold">+ 10 000</span></div>
-													<div class="cabaffpro__turnover-social social">
-														<ul>
-															<li>
-																<a href="#">
-																	<img src="img/social/youtube.svg" alt="youtube" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/facebook.svg" alt="facebook" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/instagram.svg" alt="instagram" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/telegram.svg" alt="telegram" />
-																</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div>
-												<img src="img/cabinet/turn-avatar.svg" alt="Vitaly Dmitriev" />
-												<span class="gold">Vitaly Dmitriev</span>
-												<div class="cabaffpro__turnover-hover">
-													<span class="gold">Vitaliy27</span>
-													<a href="mailto:customer@gmail.com">customer@gmail.com</a>
-													<div>оборот<span class="gold">+ 10 000</span></div>
-													<div class="cabaffpro__turnover-social social">
-														<ul>
-															<li>
-																<a href="#">
-																	<img src="img/social/youtube.svg" alt="youtube" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/facebook.svg" alt="facebook" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/instagram.svg" alt="instagram" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/telegram.svg" alt="telegram" />
-																</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div>
-												<img src="img/cabinet/turn-avatar.svg" alt="Vitaly Dmitriev" />
-												<span class="gold">Vitaly Dmitriev</span>
-												<div class="cabaffpro__turnover-hover">
-													<span class="gold">Vitaliy27</span>
-													<a href="mailto:customer@gmail.com">customer@gmail.com</a>
-													<div>оборот<span class="gold">+ 10 000</span></div>
-													<div class="cabaffpro__turnover-social social">
-														<ul>
-															<li>
-																<a href="#">
-																	<img src="img/social/youtube.svg" alt="youtube" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/facebook.svg" alt="facebook" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/instagram.svg" alt="instagram" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/telegram.svg" alt="telegram" />
-																</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div>
-												<img src="img/cabinet/turn-avatar.svg" alt="Vitaly Dmitriev" />
-												<span class="gold">Vitaly Dmitriev</span>
-												<div class="cabaffpro__turnover-hover">
-													<span class="gold">Vitaliy27</span>
-													<a href="mailto:customer@gmail.com">customer@gmail.com</a>
-													<div>оборот<span class="gold">+ 10 000</span></div>
-													<div class="cabaffpro__turnover-social social">
-														<ul>
-															<li>
-																<a href="#">
-																	<img src="img/social/youtube.svg" alt="youtube" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/facebook.svg" alt="facebook" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/instagram.svg" alt="instagram" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/telegram.svg" alt="telegram" />
-																</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</li>
-									</ul>
+								<div class="reflvl__step">
+									<span>МЕНЕДЖЕР 3</span>
+									<span class="h-[16px]">
+										<img src="img/cabinet/managerLevelBlock/3.svg" alt="МЕНЕДЖЕР 2" />
+									</span>
+									<span>
+										5000
+										<img src="img/cabinet/cg-white.svg" alt="lvl-1" />
+									</span>
+									<span>
+										<img src="img/cabinet/ok-circle.svg" alt="done" />
+									</span>
 								</div>
-								<div class="cabaffpro__turnover-right">
-									<img src="img/cabinet/turnover-right.svg" alt="Правая ветка" />
-									<div class="cabaffpro__turnover-right--title gold">
-										Правая ветка
-									</div>
-									<ul class="cabaffpro__turnover-right--list">
-										<li>
-											<div>
-												<img src="img/cabinet/turn-avatar.svg" alt="Vitaly Dmitriev" />
-												<span class="gold">Vitaly Dmitriev</span>
-												<div class="cabaffpro__turnover-hover">
-													<span class="gold">Vitaliy27</span>
-													<a href="mailto:customer@gmail.com">customer@gmail.com</a>
-													<div>оборот<span class="gold">+ 10 000</span></div>
-													<div class="cabaffpro__turnover-social social">
-														<ul>
-															<li>
-																<a href="#">
-																	<img src="img/social/youtube.svg" alt="youtube" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/facebook.svg" alt="facebook" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/instagram.svg" alt="instagram" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/telegram.svg" alt="telegram" />
-																</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div>
-												<img src="img/cabinet/turn-avatar.svg" alt="Vitaly Dmitriev" />
-												<span class="gold">Vitaly Dmitriev</span>
-											</div>
-										</li>
-										<li>
-											<div>
-												<img src="img/cabinet/turn-avatar.svg" alt="Vitaly Dmitriev" />
-												<span class="gold">Vitaly Dmitriev</span>
-											</div>
-										</li>
-										<li>
-											<div>
-												<img src="img/cabinet/turn-avatar.svg" alt="Vitaly Dmitriev" />
-												<span class="gold">Vitaly Dmitriev</span>
-												<div class="cabaffpro__turnover-hover">
-													<span class="gold">Vitaliy27</span>
-													<a href="mailto:customer@gmail.com">customer@gmail.com</a>
-													<div>оборот<span class="gold">+ 10 000</span></div>
-													<div class="cabaffpro__turnover-social social">
-														<ul>
-															<li>
-																<a href="#">
-																	<img src="img/social/youtube.svg" alt="youtube" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/facebook.svg" alt="facebook" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/instagram.svg" alt="instagram" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/telegram.svg" alt="telegram" />
-																</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div>
-												<img src="img/cabinet/turn-avatar.svg" alt="Vitaly Dmitriev" />
-												<span class="gold">Vitaly Dmitriev</span>
-												<div class="cabaffpro__turnover-hover">
-													<span class="gold">Vitaliy27</span>
-													<a href="mailto:customer@gmail.com">customer@gmail.com</a>
-													<div>оборот<span class="gold">+ 10 000</span></div>
-													<div class="cabaffpro__turnover-social social">
-														<ul>
-															<li>
-																<a href="#">
-																	<img src="img/social/youtube.svg" alt="youtube" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/facebook.svg" alt="facebook" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/instagram.svg" alt="instagram" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/telegram.svg" alt="telegram" />
-																</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div>
-												<img src="img/cabinet/turn-avatar.svg" alt="Vitaly Dmitriev" />
-												<span class="gold">Vitaly Dmitriev</span>
-												<div class="cabaffpro__turnover-hover">
-													<span class="gold">Vitaliy27</span>
-													<a href="mailto:customer@gmail.com">customer@gmail.com</a>
-													<div>оборот<span class="gold">+ 10 000</span></div>
-													<div class="cabaffpro__turnover-social social">
-														<ul>
-															<li>
-																<a href="#">
-																	<img src="img/social/youtube.svg" alt="youtube" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/facebook.svg" alt="facebook" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/instagram.svg" alt="instagram" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/telegram.svg" alt="telegram" />
-																</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div>
-												<img src="img/cabinet/turn-avatar.svg" alt="Vitaly Dmitriev" />
-												<span class="gold">Vitaly Dmitriev</span>
-												<div class="cabaffpro__turnover-hover">
-													<span class="gold">Vitaliy27</span>
-													<a href="mailto:customer@gmail.com">customer@gmail.com</a>
-													<div>оборот<span class="gold">+ 10 000</span></div>
-													<div class="cabaffpro__turnover-social social">
-														<ul>
-															<li>
-																<a href="#">
-																	<img src="img/social/youtube.svg" alt="youtube" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/facebook.svg" alt="facebook" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/instagram.svg" alt="instagram" />
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="img/social/telegram.svg" alt="telegram" />
-																</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</li>
-									</ul>
+								<div class="reflvl__step">
+									<span>МЕНЕДЖЕР 4</span>
+									<span class="h-[16px]">
+										<img src="img/cabinet/managerLevelBlock/4.svg" alt="МЕНЕДЖЕР 2" />
+									</span>
+									<span>
+										10000
+										<img src="img/cabinet/cg-white.svg" alt="lvl-1" />
+									</span>
+									<span>
+										<img src="img/cabinet/ok-circle.svg" alt="done" />
+									</span>
+								</div>
+								<div class="reflvl__step">
+									<span>МЕНЕДЖЕР 5</span>
+									<span class="h-[16px]">
+										<img src="img/cabinet/managerLevelBlock/5.svg" alt="МЕНЕДЖЕР 2" />
+									</span>
+									<span>
+										25000
+										<img src="img/cabinet/cg-white.svg" alt="lvl-1" />
+									</span>
+									<span>
+										<img src="img/cabinet/ok-circle.svg" alt="done" />
+									</span>
+								</div>
+								<div class="reflvl__step">
+									<span>МЕНЕДЖЕР 6</span>
+									<span class="h-[16px]">
+										<img src="img/cabinet/managerLevelBlock/6.svg" alt="МЕНЕДЖЕР 2" />
+									</span>
+									<span>
+										50000
+										<img src="img/cabinet/cg-white.svg" alt="lvl-1" />
+									</span>
+									<span>
+										<img src="img/cabinet/ok-circle.svg" alt="done" />
+									</span>
+								</div>
+								<div class="reflvl__step _active">
+									<span>МЕНЕДЖЕР 7</span>
+									<span class="h-[16px]">
+										<img src="img/cabinet/managerLevelBlock/7.svg" alt="МЕНЕДЖЕР 2" />
+									</span>
+									<span>
+										100000
+										<img src="img/cabinet/cg-white.svg" alt="lvl-1" />
+									</span>
+									<span> текущий </span>
+								</div>
+								<div class="reflvl__step">
+									<span>МЕНЕДЖЕР 8</span>
+									<span class="h-[16px]">
+										<img src="img/cabinet/managerLevelBlock/8.svg" alt="МЕНЕДЖЕР 2" />
+									</span>
+									<span>
+										250000
+										<img src="img/cabinet/cg-white.svg" alt="lvl-1" />
+									</span>
+									<span>
+										<span>ОСТАЛОСЬ</span>
+										<span>150000</span>
+									</span>
+								</div>
+								<div class="reflvl__step">
+									<span>МЕНЕДЖЕР 9</span>
+									<span class="h-[16px]">
+										<img src="img/cabinet/managerLevelBlock/9.svg" alt="МЕНЕДЖЕР 2" />
+									</span>
+									<span>
+										500000
+										<img src="img/cabinet/cg-white.svg" alt="lvl-1" />
+									</span>
+									<span>
+										<span>ОСТАЛОСЬ</span>
+										<span>400000</span>
+									</span>
+								</div>
+								<div class="reflvl__step">
+									<span>МЕНЕДЖЕР 10</span>
+									<span class="h-[16px]">
+										<img src="img/cabinet/managerLevelBlock/10.svg" alt="МЕНЕДЖЕР 2" />
+									</span>
+									<span>
+										1000000
+										<img src="img/cabinet/cg-white.svg" alt="lvl-1" />
+									</span>
+									<span>
+										<span>ОСТАЛОСЬ</span>
+										<span>900000</span>
+									</span>
+								</div>
+								<div class="reflvl__step">
+									<span>МЕНЕДЖЕР 11</span>
+									<span class="h-[16px]">
+										<img src="img/cabinet/managerLevelBlock/11.svg" alt="МЕНЕДЖЕР 2" />
+									</span>
+									<span>
+										2500000
+										<img src="img/cabinet/cg-white.svg" alt="lvl-1" />
+									</span>
+									<span>
+										<span>ОСТАЛОСЬ</span>
+										<span>2400000</span>
+									</span>
+								</div>
+								<div class="reflvl__step">
+									<span>МЕНЕДЖЕР 12</span>
+									<span class="h-[16px]">
+										<img src="img/cabinet/managerLevelBlock/12.svg" alt="МЕНЕДЖЕР 2" />
+									</span>
+									<span>
+										5000000
+										<img src="img/cabinet/cg-white.svg" alt="lvl-1" />
+									</span>
+									<span>
+										<span>ОСТАЛОСЬ</span>
+										<span>4900000</span>
+									</span>
 								</div>
 							</div>
 						</div>
@@ -1246,21 +804,18 @@
 					</div>
 					<nav class="footer__menu">
 						<ul>
-							<li><a href="#">О компании</a></li>
-							<li><a href="#">Партнерам</a></li>
-							<li><a href="#">Online</a></li>
-							<li><a href="#">Инвесторам</a></li>
-							<li><a href="#">Производство</a></li>
-							<li><a href="#">Контакты</a></li>
+							<li><a href="https://www.ukgholding.com/about">О компании</a></li>
+							<li><a href="https://www.ukgholding.com/partners">Партнерам</a></li>
+							<li><a href="https://www.ukgholding.com/online">Online</a></li>
+							<li><a href="https://www.ukgholding.com/investors">Инвесторам</a></li>
+							<li><a href="https://www.ukgholding.com/production">Производство</a></li>
+							<li><a href="https://www.ukgholding.com/contacts">Контакты</a></li>
 						</ul>
 					</nav>
 					<div class="footer__contacts">
 						<div class="footer__contacts-title footer__title">Контакты</div>
-						<div class="footer__contacts-body">
-							Венгрией и другими европейскими странами.
-						</div>
-						<a href="mailto:support@u-kg.com" class="footer__contacts-email gold">
-							support@u-kg.com
+						<a href="mailto:UKGholding@gmail.com" class="footer__contacts-email gold">
+							UKGholding@gmail.com
 						</a>
 					</div>
 					<div class="footer__feedback">
@@ -1297,19 +852,19 @@
 						</ul>
 					</div>
 					<div class="footer__copyright">
-						<span>“U-KG Holding” LLC 2021 © Все права защищены</span>
+						<span>“UKG Holding” 2023 © Все права защищены</span>
 						<a href="#" class="footer__terms gold">Правила и соглашения</a>
 					</div>
-					<button class="footer__btn button button_transparent">
+					<a href="cabinet-help.html" class="footer__btn button button_transparent">
 						<div><span>Обратная связь</span></div>
-					</button>
-					<div class="footer__lang lang">
-						<img src="img/icons/arrow-down-small.svg" alt="arrow-down-lang" />
-						<select name="lang__list" class="lang__list">
-							<option value="1" selected>Ru</option>
-							<option value="2">Eng</option>
-						</select>
-					</div>
+					</a>
+					<!--        <div class="footer__lang lang">-->
+					<!--            <img src="img/icons/arrow-down-small.svg" alt="arrow-down-lang"/>-->
+					<!--            <select name="lang__list" class="lang__list">-->
+					<!--                <option value="1" selected>Ru</option>-->
+					<!--                <option value="2">Eng</option>-->
+					<!--            </select>-->
+					<!--        </div>-->
 				</div>
 			</footer>
 
@@ -1326,7 +881,7 @@
 	</div>
 </div>
  -->
-	<script src="js/app.min.js?_v=20221214145754"></script>
+	<script src="js/app.min.js?_v=20230727174621"></script>
 </body>
 
 </html>

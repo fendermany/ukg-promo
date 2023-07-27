@@ -1,172 +1,172 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('html/_head.htm',{ "title":"Контакты" })
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page contacts">
-				<div class="breadcrumbs contacts__breadcrumbs">
-					<div class="referral__container">
-						<ol
-							class="breadcrumbs__list"
-							itemscope
-							itemtype="https://schema.org/BreadcrumbList"
-						>
-							<li
-								itemprop="itemListElement"
-								itemscope
-								itemtype="https://schema.org/ListItem"
-							>
-								<a itemprop="item" href="javascript:">
-									<span class="gold" itemprop="name">Главная</span></a
-								>
-								<meta itemprop="position" content="1" />
-							</li>
-							<li
-								itemprop="itemListElement"
-								itemscope
-								itemtype="https://schema.org/ListItem"
-							>
-								<a itemprop="item" href="javascript:">
-									<span itemprop="name">Контакты</span></a
-								>
-								<meta itemprop="position" content="2" />
-							</li>
-						</ol>
-					</div>
-				</div>
-				<div class="contacts__main">
-					<div class="contacts__container">
-						<div class="contacts__main-wrapper">
-							<div class="contacts__main-body">
-								<div class="contacts__main-title title">
-									КОНТАКТНАЯ
-									<span class="gold"> ИНФОРМАЦИЯ </span>
-								</div>
-								<ul class="contacts__main-list">
-									<li>
-										<span class="gold">НАШ АДРЕС</span>
-										<span>
+@@include('html/_head.htm',{ "title":"Контакты" })
+<body>
+<div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page contacts">
+        <div class="breadcrumbs contacts__breadcrumbs">
+            <div class="referral__container">
+                <ol
+                        class="breadcrumbs__list"
+                        itemscope
+                        itemtype="https://schema.org/BreadcrumbList"
+                >
+                    <li
+                            itemprop="itemListElement"
+                            itemscope
+                            itemtype="https://schema.org/ListItem"
+                    >
+                        <a itemprop="item" href="javascript:">
+                            <span class="gold" itemprop="name">Главная</span></a
+                        >
+                        <meta itemprop="position" content="1"/>
+                    </li>
+                    <li
+                            itemprop="itemListElement"
+                            itemscope
+                            itemtype="https://schema.org/ListItem"
+                    >
+                        <a itemprop="item" href="javascript:">
+                            <span itemprop="name">Контакты</span></a
+                        >
+                        <meta itemprop="position" content="2"/>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="contacts__main">
+            <div class="contacts__container">
+                <div class="contacts__main-wrapper">
+                    <div class="contacts__main-body">
+                        <div class="contacts__main-title title">
+                            КОНТАКТНАЯ
+                            <span class="gold"> ИНФОРМАЦИЯ </span>
+                        </div>
+                        <ul class="contacts__main-list">
+                            <li>
+                                <span class="gold">НАШ АДРЕС</span>
+                                <span>
 											Бишкек, Киргызская республика 720040, бульвар Эркиндик,
 											10, оф. 17
 										</span>
-										<img src="@img/map/geo.svg" alt="geo" />
-									</li>
-									<li>
-										<span class="gold">e-mail</span>
-										<span>
+                                <img src="@img/map/geo.svg" alt="geo"/>
+                            </li>
+                            <li>
+                                <span class="gold">e-mail</span>
+                                <span>
 											<a href="mailto:u-kg.holding@mail.ru"
-												>u-kg.holding@mail.ru</a
-											>
+                                            >u-kg.holding@mail.ru</a
+                                            >
 											<a href="mailto:ukg.holding.llc@gmail.com"
-												>ukg.holding.llc@gmail.com</a
-											>
+                                            >ukg.holding.llc@gmail.com</a
+                                            >
 										</span>
-										<img src="@img/map/mail.svg" alt="email" />
-									</li>
-									<li>
-										<span class="gold">Социальные сети</span>
-										<span class="social">
+                                <img src="@img/map/mail.svg" alt="email"/>
+                            </li>
+                            <li>
+                                <span class="gold">Социальные сети</span>
+                                <span class="social">
 											<ul>
 												<li>
 													<a href="#">
-														<img src="@img/social/youtube.svg" alt="youtube" />
+														<img src="@img/social/youtube.svg" alt="youtube"/>
 													</a>
 												</li>
 												<li>
 													<a href="#">
 														<img
-															src="@img/social/facebook.svg"
-															alt="facebook"
-														/>
+                                                                src="@img/social/facebook.svg"
+                                                                alt="facebook"
+                                                        />
 													</a>
 												</li>
 												<li>
 													<a href="#">
 														<img
-															src="@img/social/instagram.svg"
-															alt="instagram"
-														/>
+                                                                src="@img/social/instagram.svg"
+                                                                alt="instagram"
+                                                        />
 													</a>
 												</li>
 												<li>
 													<a href="#">
 														<img
-															src="@img/social/telegram.svg"
-															alt="telegram"
-														/>
+                                                                src="@img/social/telegram.svg"
+                                                                alt="telegram"
+                                                        />
 													</a>
 												</li>
 											</ul>
 										</span>
-										<img src="@img/map/social.svg" alt="social" />
-									</li>
-								</ul>
-							</div>
-							<div class="contacts__main-map">
-								<div class="contacts__main-map--wrapper">
-									<img src="@img/map/map.png" alt="map" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="contacts__feedback">
-					<img
-						src="@img/mountains/mountains.png"
-						alt="mountains"
-						class="contacts__feedback-bg"
-					/>
-					<div class="contacts__container">
-						<div class="contacts__feedback-title title">
-							Напишите <span class="gold">Нам</span>
-						</div>
-						<div class="contacts__feedback-descr">
-							Если у вас возник вопрос или появилось предложение, свяжитесь с
-							нами через специальную форму или напишите на почту
-							support@ukgholding.com
-						</div>
-						<form class="contacts__feedback-form">
-							<div class="contacts__feedback-form--line">
-								<label for="theme">Тема</label>
-								<input
-									autocomplete="off"
-									type="text"
-									name="theme"
-									placeholder="Тема сообщения"
-									class="input contacts__feedback-form--input"
-								/>
-							</div>
-							<div class="contacts__feedback-form--line">
-								<label for="email">Почта</label>
-								<input
-									autocomplete="off"
-									type="text"
-									name="email"
-									placeholder="Ваша почта"
-									class="input contacts__feedback-form--input"
-								/>
-							</div>
-							<div class="contacts__feedback-form--line">
-								<label for="text">Сообщение</label>
-								<textarea
-									autocomplete="off"
-									name="text"
-									placeholder="Текст сообщения"
-									class="input contacts__feedback-form--textarea"
-								></textarea>
-							</div>
-							<button
-								class="contacts__feedback-form--button button button_gold"
-							>
-								Отправить
-							</button>
-						</form>
-					</div>
-				</div>
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
-	</body>
+                                <img src="@img/map/social.svg" alt="social"/>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contacts__main-map">
+                        <div class="contacts__main-map--wrapper">
+                            <img src="@img/map/map.png" alt="map"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contacts__feedback">
+            <img
+                    src="@img/mountains/mountains.png"
+                    alt="mountains"
+                    class="contacts__feedback-bg"
+            />
+            <div class="contacts__container">
+                <div class="contacts__feedback-title title">
+                    Напишите <span class="gold">Нам</span>
+                </div>
+                <div class="contacts__feedback-descr">
+                    Если у вас возник вопрос или появилось предложение, свяжитесь с
+                    нами через специальную форму или напишите на почту
+                    UKGholding@gmail.com
+                </div>
+                <form class="contacts__feedback-form">
+                    <div class="contacts__feedback-form--line">
+                        <label for="theme">Тема</label>
+                        <input
+                                autocomplete="off"
+                                type="text"
+                                name="theme"
+                                placeholder="Тема сообщения"
+                                class="input contacts__feedback-form--input"
+                        />
+                    </div>
+                    <div class="contacts__feedback-form--line">
+                        <label for="email">Почта</label>
+                        <input
+                                autocomplete="off"
+                                type="text"
+                                name="email"
+                                placeholder="Ваша почта"
+                                class="input contacts__feedback-form--input"
+                        />
+                    </div>
+                    <div class="contacts__feedback-form--line">
+                        <label for="text">Сообщение</label>
+                        <textarea
+                                autocomplete="off"
+                                name="text"
+                                placeholder="Текст сообщения"
+                                class="input contacts__feedback-form--textarea"
+                        ></textarea>
+                    </div>
+                    <button
+                            class="contacts__feedback-form--button button button_gold"
+                    >
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+    @@include('html/_footer.htm',{})
+</div>
+@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</body>
 </html>

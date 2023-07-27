@@ -1,11 +1,11 @@
-// Импорт основного модуля
+// Імпорт основного модуля
 import gulp from "gulp";
-// Импорт общих плагинов
+// Імпорт загальних плагінів
 import { plugins } from "./config/gulp-plugins.js";
-// Импорт путей
+// Імпорт шляхів
 import { path } from "./config/gulp-settings.js";
 
-// Передаем значения в глобальную переменную
+// Передаємо значення у глобальну змінну
 global.app = {
 	isBuild: process.argv.includes('--build'),
 	isDev: !process.argv.includes('--build'),
@@ -16,7 +16,7 @@ global.app = {
 	plugins: plugins
 }
 
-// Импорт задач
+// Імпорт завдань
 import { reset } from "./config/gulp-tasks/reset.js";
 import { html } from "./config/gulp-tasks/html.js";
 import { css } from "./config/gulp-tasks/css.js";
@@ -29,14 +29,14 @@ import { sprite } from "./config/gulp-tasks/sprite.js";
 import { gitignore } from "./config/gulp-tasks/gitignore.js";
 import { otfToTtf, ttfToWoff, fonstStyle } from "./config/gulp-tasks/fonts.js";
 
-// Последовательная обработака шрифтов
+// Послідовна обробка шрифтів
 const fonts = gulp.series(reset, otfToTtf, ttfToWoff, fonstStyle);
-// Основные задачи будем выполнять параллельно после обработки шрифтов
+// Основні завдання виконуватимемо паралельно після обробки шрифтів
 const devTasks = gulp.parallel(fonts, gitignore);
-// Основные задачи будем выполнять параллельно после обработки шрифтов
+// Основні завдання виконуватимемо паралельно після обробки шрифтів
 const buildTasks = gulp.series(fonts, jsDev, js, gulp.parallel(html, css, images, gitignore));
 
-// Экспорт задач
+// Експорт завдань
 export { html }
 export { css }
 export { js }
@@ -47,19 +47,19 @@ export { sprite }
 export { ftp }
 export { zip }
 
-// Построение сценариев выполнения задач
+// Побудова сценаріїв виконання завдань
 const development = gulp.series(devTasks);
 const build = gulp.series(buildTasks);
 const deployFTP = gulp.series(buildTasks, ftp);
 const deployZIP = gulp.series(buildTasks, zip);
 
-// Экспорт сценариев
+// Експорт сценаріїв
 export { development }
 export { build }
 export { deployFTP }
 export { deployZIP }
 
-// Выполнение сценария по умолчанию
+// Виконання сценарію за замовчуванням
 gulp.task('default', development);
 
 

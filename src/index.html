@@ -1,214 +1,994 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Верстка «NEW_PROJECT_NAME»</title>
-	</head>
-	<body>
-		<div class="rootpage">
-			<h1>Верстка «NEW_PROJECT_NAME»</h1>
-			<!-- <div class="rootpage__info">Особенности проекта</div> -->
-<!--			<h2>Промо сайт:</h2>-->
-<!--			<ol class="rootpage__list">-->
-<!--				<li><a target="_blank" href="home.html">Главная</a></li>-->
-<!--				<li><a target="_blank" href="partner.html">Партнерам</a></li>-->
-<!--				<li>-->
-<!--					<a target="_blank" href="referral.html">Партнерская программа</a>-->
-<!--				</li>-->
-<!--				<li>-->
-<!--					<a target="_blank" href="production.html">Производство</a>-->
-<!--				</li>-->
-<!--				<li>-->
-<!--					<a target="_blank" href="contacts.html">Контакты</a>-->
-<!--				</li>-->
-<!--				<li>-->
-<!--					<a target="_blank" href="token.html">Токен</a>-->
-<!--				</li>-->
-<!--				<li>-->
-<!--					<a target="_blank" href="documents.html">Документы</a>-->
-<!--				</li>-->
-<!--				<li>-->
-<!--					<a target="_blank" href="partners.html">Партнеры</a>-->
-<!--				</li>-->
-<!--				<li>-->
-<!--					<a target="_blank" href="about.html">О компании</a>-->
-<!--				</li>-->
-<!--			</ol>-->
-			<h2>Кабинет:</h2>
-			<ol class="rootpage__list">
-				<li><a target="_blank" href="cabinet-home.html">Главная</a></li>
-				<li>
-					<a target="_blank" href="cabinet-affiliate.html"
-						>Партнёрская программа</a
-					>
-				</li>
-				<li>
-					<a target="_blank" href="cabinet-help.html">Помощь</a>
-				</li>
-				<li>
-					<a target="_blank" href="cabinet-investments.html">Инвестиции</a>
-				</li>
-				<li>
-					<a target="_blank" href="cabinet-token.html">Токен</a>
-				</li>
-				<li>
-					<a target="_blank" href="cabinet-topup.html">Пополнение</a>
-				</li>
-				<li>
-					<a target="_blank" href="cabinet-profile.html">Мой профиль</a>
-				</li>
-				<li>
-					<a target="_blank" href="cabinet-promotional.html"
-						>Рекламные материалы</a
-					>
-				</li>
-				<li>
-					<a target="_blank" href="cabinet-signin.html">Вход</a>
-				</li>
-				<li>
-					<a target="_blank" href="cabinet-recovery.html"
-						>Восстановление пароля</a
-					>
-				</li>
-				<li>
-					<a target="_blank" href="cabinet-registration.html">Регистрация</a>
-				</li>
-			</ol>
-			<!-- <h2>Попапы:</h2>
-			<ol class="rootpage__list">
-				<li><a target="_blank" href="home.html#"></a></li>
-			</ol>
-			<div class="rootpage__tnx">
-				<h2>Спасибо за заказ!</h2>
-				<p>Буду рад (а) хорошему отзыву.</p>
-				<p>Обращайтесь еще!</p>
-			</div>
-			<div class="rootpage__contacts">
-				<h2>Мои контакты:</h2>
-				<p>Почта: <a href="mailto:email@gmail.com">fendermany@gmail.com</a></p>
-				<p>Телефон: <a href="tel:8800800800">+372 58 46 35 61</a></p>
-				<p>
-					Соц. сеть: <a href="https://vk.com/rmltsn">ссылка на соц. сеть</a>
-				</p>
-			</div> -->
-		</div>
-	</body>
-	<style>
-		@charset "UTF-8";
-		@import url('https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap');
-		*,
-		*::before,
-		*::after {
-			padding: 0px;
-			margin: 0px;
-			border: 0px;
-			box-sizing: border-box;
-		}
-		html,
-		body {
-			height: 100%;
-			margin: 0;
-			padding: 0;
-			min-width: 320px;
-			width: 100%;
-			color: #fff;
-			background-color: #5e5373;
-		}
-		body {
-			font-family: Montserrat;
-			font-size: 100%;
-			line-height: 1;
-			font-size: 1rem;
-		}
-		a {
-			text-decoration: underline;
-			color: #ebe691;
-		}
-		a:visited {
-			text-decoration: underline;
-			color: #aaa768;
-		}
-		a:hover {
-			text-decoration: none;
-		}
-		ul li {
-			list-style: none;
-		}
-		img {
-			vertical-align: top;
-		}
-		.wrapper {
-			width: 100%;
-			min-height: 100%;
-			overflow: hidden;
-		}
-		.rootpage {
-			padding: 30px;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-		}
-		@media (max-width: 767px) {
-			.rootpage {
-				padding: 30px 15px;
-			}
-		}
-		h1 {
-			color: #ebe691;
-			font-size: 2.5rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-		@media (max-width: 767px) {
-			h1 {
-				font-size: 1.85rem;
-				margin: 0px 0px 1.25rem 0px;
-			}
-		}
-		h2 {
-			color: #ebe691;
-			font-size: 1.25rem;
-			margin: 0px 0px 1rem 0px;
-		}
-		@media (max-width: 767px) {
-			h2 {
-				font-size: 1.125rem;
-				margin: 0px 0px 1rem 0px;
-			}
-		}
-		.rootpage__info {
-			line-height: 140%;
-			margin: 0px 0px 1.5rem 0px;
-		}
-
-		.rootpage__list {
-			margin: 0px 0px 2.25rem 1.25rem;
-		}
-		.rootpage__list li:not(:last-child) {
-			margin: 0px 0px 15px 0px;
-		}
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 200px;
-			padding: 20px 65px;
-			line-height: 140%;
-		}
-		@media (max-width: 767px) {
-			.rootpage__contacts,
-			.rootpage__tnx {
-				border-radius: 40px;
-				padding: 20px;
-			}
-		}
-		.rootpage__contacts {
-			background: #32b5a4;
-		}
-		.rootpage__contacts a {
-			color: #ebe691;
-		}
-		.rootpage__tnx {
-			background: #c22d63;
-			margin: 0px 0px 1rem 0px;
-		}
-	</style>
+<html lang="ru">
+@@include('html/_head-fix.htm',{ "title":"Кабинет - Главная" })
+<body class="cabinet">
+<div class="cabinet__wrapper">
+    @@include('html/_cabinet-aside.htm',{})
+    <div class="wrapper">
+        <main class="page">
+            @@include('html/_cabinet-header.htm',{})
+            @@include('html/_cabinet-topbar.htm',{})
+            <div class="cabinetHome">
+                <div class="cabinetHome__profitability">
+                    <div class="cabinetHome__yieldchart">
+                        <div data-tabs class="cabinetHome__yieldchart--wrapper">
+                            <div class="cabinetHome__yieldchart-top">
+                                <div class="cabinetHome__yieldchart-title cabinet__title">
+                                    ГРАФИК <span class="gold">ДОХОДНОСТИ</span>
+                                </div>
+                                <ul data-tabs-titles class="cabinetHome__yieldchart-tabstitles">
+                                    <li class="_tab-active">По дням</li>
+                                    <li>По месяцам</li>
+                                    <li>По годам</li>
+                                </ul>
+                            </div>
+                            <ul data-tabs-body data-tabs-hash class="cabinetHome__yieldchart-tabsbodies">
+                                <li>график 1</li>
+                                <li>график 2</li>
+                                <li>график 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="cabinetHome__profitability-table grey-block-dark">
+                        <li>
+									<span>
+										<img src="@img/cabinet/procent.svg" alt="procent-table"/>
+										Процент доходности компании за все время:
+									</span>
+                            <span class="gold"> 8.9% </span>
+                        </li>
+                        <li>
+									<span>
+										<img src="@img/cabinet/procent.svg" alt="procent-table"/>
+										Процент доходности компании за эту неделю:
+									</span>
+                            <span class="gold"> 0% </span>
+                        </li>
+                        <li>
+									<span>
+										<img src="@img/cabinet/dollar.svg" alt="dollar-table"/>
+										Ваша доходность за все время:
+									</span>
+                            <span class="gold">
+										293.67
+										<img src="@img/cabinet/cg.svg" alt="cg-prof"/>
+									</span>
+                        </li>
+                        <li>
+									<span>
+										<img src="@img/cabinet/dollar.svg" alt="dollar-table"/>
+										Ваша доходность за все эту неделю:
+									</span>
+                            <span class="gold">
+										0.00
+										<img src="@img/cabinet/cg.svg" alt="cg-prof"/>
+									</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cabinetHome__investments">
+                    <div class="cabinetHome__title cabinet__investments-title">
+                        Ваши <span class="gold">Инвестиции</span>
+                    </div>
+                    <ul class="cabinetHome__pulls pulls">
+                        <li class="pulls__item pull">
+                            <div class="pull__header">
+                                <img src="@img/cabinet/gold.svg" alt="pull-header"/>
+                                <div class="pull__name grey-block-dark">
+                                    <span class="gold">Название пула</span>
+                                </div>
+                                <div class="pull__progress">
+                                    <div class="pull__progress-start">0%</div>
+                                    <div class="pull__progress-body">
+                                        <div
+                                                style="width: 50%"
+                                                class="pull__progress-body--inner"
+                                        >
+                                            <div class="pull__progress-current gold">50%</div>
+                                        </div>
+                                    </div>
+                                    <div class="pull__progress-end">100%</div>
+                                </div>
+                                <div class="pull__profit grey-block-dark">
+                                    <span>Прибыль</span>
+                                    <span class="gold">1046.14</span>
+                                    <img src="@img/cabinet/cg.svg" alt="pull-profit"/>
+                                </div>
+                                <div class="pull__more">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="pull__body">
+                                <img src="@img/cabinet/gold.svg" alt="pull-header"/>
+                                <div class="pull__table">
+                                    <div class="pull__column">
+                                        <span class="gold">Название пула</span>
+                                        <span>6 месяцев</span>
+                                    </div>
+                                    <div class="pull__column">
+                                        <span class="gold">Дата старта</span>
+                                        <span>23.12.2021</span>
+                                    </div>
+                                    <div class="pull__column">
+                                        <span class="gold">Дата окончания</span>
+                                        <span>23.12.2021</span>
+                                    </div>
+                                    <div class="pull__column">
+                                        <span class="gold">Сумма депозита</span>
+                                        <span
+                                        >(42% + тело ) 142
+													<img src="@img/cabinet/cg.svg" alt="deposit amount"/>
+												</span>
+                                    </div>
+                                    <div class="pull__column">
+                                        <span class="gold">Общая прибыль</span>
+                                        <span
+                                        >432587
+													<img src="@img/cabinet/cg.svg" alt="deposit amount"/>
+												</span>
+                                    </div>
+                                    <div class="pull__column">
+                                        <span class="gold">Заработанно</span>
+                                        <span
+                                        >55754740
+													<img src="@img/cabinet/cg.svg" alt="deposit amount"/>
+												</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="pulls__item pull">
+                            <div class="pull__header">
+                                <img src="@img/cabinet/gold-3.svg" alt="pull-header"/>
+                                <div class="pull__name grey-block-dark">
+                                    <span class="gold">Название пула</span>
+                                </div>
+                                <div class="pull__progress">
+                                    <div class="pull__progress-start">0%</div>
+                                    <div class="pull__progress-body">
+                                        <div
+                                                style="width: 50%"
+                                                class="pull__progress-body--inner"
+                                        >
+                                            <div class="pull__progress-current gold">50%</div>
+                                        </div>
+                                    </div>
+                                    <div class="pull__progress-end">100%</div>
+                                </div>
+                                <div class="pull__profit grey-block-dark">
+                                    <span>Прибыль</span>
+                                    <span class="gold">1046.14</span>
+                                    <img src="@img/cabinet/cg.svg" alt="pull-profit"/>
+                                </div>
+                                <div class="pull__more">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="pull__body">
+                                <img src="@img/cabinet/gold-3.svg" alt="pull-header"/>
+                                <div class="pull__table">
+                                    <div class="pull__column">
+                                        <span class="gold">Название пула</span>
+                                        <span>6 месяцев</span>
+                                    </div>
+                                    <div class="pull__column">
+                                        <span class="gold">Дата старта</span>
+                                        <span>23.12.2021</span>
+                                    </div>
+                                    <div class="pull__column">
+                                        <span class="gold">Дата окончания</span>
+                                        <span>23.12.2021</span>
+                                    </div>
+                                    <div class="pull__column">
+                                        <span class="gold">Сумма депозита</span>
+                                        <span
+                                        >(42% + тело ) 142
+													<img src="@img/cabinet/cg.svg" alt="deposit amount"/>
+												</span>
+                                    </div>
+                                    <div class="pull__column">
+                                        <span class="gold">Общая прибыль</span>
+                                        <span
+                                        >432587
+													<img src="@img/cabinet/cg.svg" alt="deposit amount"/>
+												</span>
+                                    </div>
+                                    <div class="pull__column">
+                                        <span class="gold">Заработанно</span>
+                                        <span
+                                        >55754740
+													<img src="@img/cabinet/cg.svg" alt="deposit amount"/>
+												</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="pulls__item pull">
+                            <div class="pull__header">
+                                <img src="@img/cabinet/gold-1.svg" alt="pull-header"/>
+                                <div class="pull__name grey-block-dark">
+                                    <span class="gold">Название пула</span>
+                                </div>
+                                <div class="pull__progress">
+                                    <div class="pull__progress-start">0%</div>
+                                    <div class="pull__progress-body">
+                                        <div
+                                                style="width: 50%"
+                                                class="pull__progress-body--inner"
+                                        >
+                                            <div class="pull__progress-current gold">50%</div>
+                                        </div>
+                                    </div>
+                                    <div class="pull__progress-end">100%</div>
+                                </div>
+                                <div class="pull__profit grey-block-dark">
+                                    <span>Прибыль</span>
+                                    <span class="gold">1046.14</span>
+                                    <img src="@img/cabinet/cg.svg" alt="pull-profit"/>
+                                </div>
+                                <div class="pull__more">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="pull__body">
+                                <img src="@img/cabinet/gold-1.svg" alt="pull-header"/>
+                                <div class="pull__table">
+                                    <div class="pull__column">
+                                        <span class="gold">Название пула</span>
+                                        <span>6 месяцев</span>
+                                    </div>
+                                    <div class="pull__column">
+                                        <span class="gold">Дата старта</span>
+                                        <span>23.12.2021</span>
+                                    </div>
+                                    <div class="pull__column">
+                                        <span class="gold">Дата окончания</span>
+                                        <span>23.12.2021</span>
+                                    </div>
+                                    <div class="pull__column">
+                                        <span class="gold">Сумма депозита</span>
+                                        <span
+                                        >(42% + тело ) 142
+													<img src="@img/cabinet/cg.svg" alt="deposit amount"/>
+												</span>
+                                    </div>
+                                    <div class="pull__column">
+                                        <span class="gold">Общая прибыль</span>
+                                        <span
+                                        >432587
+													<img src="@img/cabinet/cg.svg" alt="deposit amount"/>
+												</span>
+                                    </div>
+                                    <div class="pull__column">
+                                        <span class="gold">Заработанно</span>
+                                        <span
+                                        >55754740
+													<img src="@img/cabinet/cg.svg" alt="deposit amount"/>
+												</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cabinetHome__qsb">
+                    <div class="cabinetHome__qsb-title cabinet__title">
+                        БОНУС <span class="gold">Быстрого старта</span>
+                    </div>
+                    <div class="cabinetHome__qsb-wrapper grey-block-dark-414">
+                        <div class="cabinetHome__qsb-body">
+                            <div class="cabinetHome__qsb-body--row">
+                                <div class="cabinetHome__qsb-body--title">сколько осталось</div>
+                                <div class="cabinetHome__qsb-body--item grey-block-dark">
+                                    <img
+                                            src="@img/cabinet/calendar.svg"
+                                            alt="quick-start-bonus-calendar"
+                                    />
+                                    <span>Дата</span>
+                                    <span class="gold">29 дней</span>
+                                </div>
+                                <div class="cabinetHome__qsb-body--item grey-block-dark">
+                                    <img
+                                            src="@img/cabinet/clock.svg"
+                                            alt="quick-start-bonus-clock"
+                                    />
+                                    <span>Время</span>
+                                    <span class="gold">05:39:09</span>
+                                </div>
+                            </div>
+                            <div class="cabinetHome__qsb-body--row">
+                                <div class="cabinetHome__qsb-body--title">
+                                    для получения бонуса необходимо
+                                </div>
+                                <div class="cabinetHome__qsb-body--item grey-block-dark">
+                                    <img
+                                            src="@img/cabinet/user.svg"
+                                            alt="quick-start-bonus-user"
+                                    />
+                                    <span>Ваш оборот</span>
+                                    <span class="gold"
+                                    >0.00
+												<img src="@img/cabinet/cg.svg" alt="turnover"/>
+											</span>
+                                </div>
+                                <div class="cabinetHome__qsb-body--item grey-block-dark">
+                                    <img
+                                            src="@img/cabinet/user.svg"
+                                            alt="quick-start-bonus-user"
+                                    />
+                                    <span>Вы получите</span>
+                                    <span class="gold"
+                                    >0
+												<img src="@img/cabinet/cg.svg" alt="turnover"/>
+											</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cabinetHome__qsb-table">
+                            <div class="cabinetHome__qsb-table--row">
+                                <div class="cabinetHome__qsb-table--turn">
+                                    <span>ОБОРОТ</span>
+                                    <span class="gold">
+												100
+												<img src="@img/cabinet/cg.svg" alt="turn"/>
+											</span>
+                                </div>
+                                <div class="cabinetHome__qsb-table--earn">
+                                    <span>осталось</span>
+                                    <span class="gold">
+												100
+												<img src="@img/cabinet/cg.svg" alt="earn"/>
+											</span>
+                                </div>
+                                <div class="cabinetHome__qsb-table--premium">
+                                    <span>премия</span>
+                                    <span class="gold">
+												100
+												<img src="@img/cabinet/cg.svg" alt="earn"/>
+											</span>
+                                </div>
+                            </div>
+                            <div class="cabinetHome__qsb-table--row">
+                                <div class="cabinetHome__qsb-table--turn">
+                                    <span>ОБОРОТ</span>
+                                    <span class="gold">
+												500
+												<img src="@img/cabinet/cg.svg" alt="turn"/>
+											</span>
+                                </div>
+                                <div class="cabinetHome__qsb-table--earn">
+                                    <span>осталось</span>
+                                    <span class="gold">
+												500
+												<img src="@img/cabinet/cg.svg" alt="earn"/>
+											</span>
+                                </div>
+                                <div class="cabinetHome__qsb-table--premium">
+                                    <span>премия</span>
+                                    <span class="gold">
+												500
+												<img src="@img/cabinet/cg.svg" alt="earn"/>
+											</span>
+                                </div>
+                            </div>
+                            <div class="cabinetHome__qsb-table--row">
+                                <div class="cabinetHome__qsb-table--turn">
+                                    <span>ОБОРОТ</span>
+                                    <span class="gold">
+												1000
+												<img src="@img/cabinet/cg.svg" alt="turn"/>
+											</span>
+                                </div>
+                                <div class="cabinetHome__qsb-table--earn">
+                                    <span>осталось</span>
+                                    <span class="gold">
+												1000
+												<img src="@img/cabinet/cg.svg" alt="earn"/>
+											</span>
+                                </div>
+                                <div class="cabinetHome__qsb-table--premium">
+                                    <span>премия</span>
+                                    <span class="gold">
+												1000
+												<img src="@img/cabinet/cg.svg" alt="earn"/>
+											</span>
+                                </div>
+                            </div>
+                            <div class="cabinetHome__qsb-table--row">
+                                <div class="cabinetHome__qsb-table--turn">
+                                    <span>ОБОРОТ</span>
+                                    <span class="gold">
+												2500
+												<img src="@img/cabinet/cg.svg" alt="turn"/>
+											</span>
+                                </div>
+                                <div class="cabinetHome__qsb-table--earn">
+                                    <span>осталось</span>
+                                    <span class="gold">
+												2500
+												<img src="@img/cabinet/cg.svg" alt="earn"/>
+											</span>
+                                </div>
+                                <div class="cabinetHome__qsb-table--premium">
+                                    <span>премия</span>
+                                    <span class="gold">
+												2500
+												<img src="@img/cabinet/cg.svg" alt="earn"/>
+											</span>
+                                </div>
+                            </div>
+                            <div class="cabinetHome__qsb-table--row">
+                                <div class="cabinetHome__qsb-table--turn">
+                                    <span>ОБОРОТ</span>
+                                    <span class="gold">
+												5000
+												<img src="@img/cabinet/cg.svg" alt="turn"/>
+											</span>
+                                </div>
+                                <div class="cabinetHome__qsb-table--earn">
+                                    <span>осталось</span>
+                                    <span class="gold">
+												5000
+												<img src="@img/cabinet/cg.svg" alt="earn"/>
+											</span>
+                                </div>
+                                <div class="cabinetHome__qsb-table--premium">
+                                    <span>премия</span>
+                                    <span class="gold">
+												5000
+												<img src="@img/cabinet/cg.svg" alt="earn"/>
+											</span>
+                                </div>
+                            </div>
+                            <div class="cabinetHome__qsb-table--row">
+                                <div class="cabinetHome__qsb-table--turn">
+                                    <span>ОБОРОТ</span>
+                                    <span class="gold">
+												7000
+												<img src="@img/cabinet/cg.svg" alt="turn"/>
+											</span>
+                                </div>
+                                <div class="cabinetHome__qsb-table--earn">
+                                    <span>осталось</span>
+                                    <span class="gold">
+												7000
+												<img src="@img/cabinet/cg.svg" alt="earn"/>
+											</span>
+                                </div>
+                                <div class="cabinetHome__qsb-table--premium">
+                                    <span>премия</span>
+                                    <span class="gold">
+												7000
+												<img src="@img/cabinet/cg.svg" alt="earn"/>
+											</span>
+                                </div>
+                            </div>
+                            <div class="cabinetHome__qsb-table--row">
+                                <div class="cabinetHome__qsb-table--turn">
+                                    <span>ОБОРОТ</span>
+                                    <span class="gold">
+												10000
+												<img src="@img/cabinet/cg.svg" alt="turn"/>
+											</span>
+                                </div>
+                                <div class="cabinetHome__qsb-table--earn">
+                                    <span>осталось</span>
+                                    <span class="gold">
+												10000
+												<img src="@img/cabinet/cg.svg" alt="earn"/>
+											</span>
+                                </div>
+                                <div class="cabinetHome__qsb-table--premium">
+                                    <span>премия</span>
+                                    <span class="gold">
+												10000
+												<img src="@img/cabinet/cg.svg" alt="earn"/>
+											</span>
+                                </div>
+                            </div>
+                            <div class="cabinetHome__qsb-table--row">
+                                <div class="cabinetHome__qsb-table--turn">
+                                    <span>ОБОРОТ</span>
+                                    <span class="gold">
+												15000
+												<img src="@img/cabinet/cg.svg" alt="turn"/>
+											</span>
+                                </div>
+                                <div class="cabinetHome__qsb-table--earn">
+                                    <span>осталось</span>
+                                    <span class="gold">
+												15000
+												<img src="@img/cabinet/cg.svg" alt="earn"/>
+											</span>
+                                </div>
+                                <div class="cabinetHome__qsb-table--premium">
+                                    <span>премия</span>
+                                    <span class="gold">
+												15000
+												<img src="@img/cabinet/cg.svg" alt="earn"/>
+											</span>
+                                </div>
+                            </div>
+                            <div class="cabinetHome__qsb-table--row">
+                                <div class="cabinetHome__qsb-table--turn">
+                                    <span>ОБОРОТ</span>
+                                    <span class="gold">
+												20000
+												<img src="@img/cabinet/cg.svg" alt="turn"/>
+											</span>
+                                </div>
+                                <div class="cabinetHome__qsb-table--earn">
+                                    <span>осталось</span>
+                                    <span class="gold">
+												20000
+												<img src="@img/cabinet/cg.svg" alt="earn"/>
+											</span>
+                                </div>
+                                <div class="cabinetHome__qsb-table--premium">
+                                    <span>премия</span>
+                                    <span class="gold">
+												20000
+												<img src="@img/cabinet/cg.svg" alt="earn"/>
+											</span>
+                                </div>
+                            </div>
+                            <div class="cabinetHome__qsb-table--row">
+                                <div class="cabinetHome__qsb-table--turn">
+                                    <span>ОБОРОТ</span>
+                                    <span class="gold">
+												50000
+												<img src="@img/cabinet/cg.svg" alt="turn"/>
+											</span>
+                                </div>
+                                <div class="cabinetHome__qsb-table--earn">
+                                    <span>осталось</span>
+                                    <span class="gold">
+												50000
+												<img src="@img/cabinet/cg.svg" alt="earn"/>
+											</span>
+                                </div>
+                                <div class="cabinetHome__qsb-table--premium">
+                                    <span>премия</span>
+                                    <span class="gold">
+												50000
+												<img src="@img/cabinet/cg.svg" alt="earn"/>
+											</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cabinetHome__mancor">
+                    <div class="cabinetHome__invitebonus grey-block-dark-414">
+                        <div class="cabinetHome__invitebonus-title cabinet__title">
+                            БОНУС <span class="gold">Пригласителя</span>
+                        </div>
+                        <div class="cabinetHome__invitebonus-3gold">
+                            <div>
+                                <span>Полученно</span>
+                                <span class="gold">1 слиток</span>
+                                <img src="@img/cabinet/user-white.svg" alt="3gold-user"/>
+                            </div>
+                            <div>
+                                <img src="@img/cabinet/bonus-3.svg" alt="bonus-3"/>
+                            </div>
+                            <div>
+                                <span>Условия для получения бонуса пригласителя:</span>
+                                <span>
+											Вашим приглашенным необходимо<br/>
+											Достичь уровня <span>МЕНЕДЖЕР 2</span> за 90 дней
+										</span>
+                                <img
+                                        src="@img/cabinet/documents.svg"
+                                        alt="bonus-documents"
+                                />
+                            </div>
+                        </div>
+                        <table class="cabinetHome__invitebonus-table">
+                            <thead>
+                            <tr>
+                                <th>Логин</th>
+                                <th>Почта</th>
+                                <th>Осталось</th>
+                                <th>Оборот</th>
+                                <th>Прогресс</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>User</td>
+                                <td>testmail@gmail</td>
+                                <td>
+                                    <div>
+                                        35333330.14
+                                        <img src="@img/cabinet/cg-white.svg" alt="saldo"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        35055.14
+                                        <img src="@img/cabinet/cg-white.svg" alt="turn"/>
+                                    </div>
+                                </td>
+                                <td class="cabinetHome__invitebonus-table--progress">
+                                    <span>8 ур</span>
+                                    <div>
+                                        <span style="width: 50%"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>User</td>
+                                <td>testmail@gmail</td>
+                                <td>
+                                    <div>
+                                        35333330.14
+                                        <img src="@img/cabinet/cg-white.svg" alt="saldo"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        35055.14
+                                        <img src="@img/cabinet/cg-white.svg" alt="turn"/>
+                                    </div>
+                                </td>
+                                <td class="cabinetHome__invitebonus-table--progress">
+                                    <span>8 ур</span>
+                                    <div>
+                                        <span style="width: 50%"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>User</td>
+                                <td>testmail@gmail</td>
+                                <td>
+                                    <div>
+                                        35333330.14
+                                        <img src="@img/cabinet/cg-white.svg" alt="saldo"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        35055.14
+                                        <img src="@img/cabinet/cg-white.svg" alt="turn"/>
+                                    </div>
+                                </td>
+                                <td class="cabinetHome__invitebonus-table--progress">
+                                    <span>8 ур</span>
+                                    <div>
+                                        <span style="width: 50%"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="cabinetHome__invitebonus-table--more">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                    <div class="cabinetHome__yourlvl grey-block-dark-414">
+                        <div class="cabinetHome__yourlvl-title">ВАШ УРОВЕНЬ</div>
+                        <div class="cabinetHome__yourlvl-body">
+                            <div class="cabinetHome__yourlvl-body--title gold">
+                                МЕНЕДЖЕР 4
+                            </div>
+                            <div class="cabinetHome__yourlvl-body--subtitle">
+                                Оборот структуры:
+                            </div>
+                            <ul class="cabinetHome__yourlvl-body--list">
+                                <li>
+											<span class="gold">
+												12040
+												<img src="@img/cabinet/cg.svg" alt="done"/>
+											</span>
+                                    <span>Выполнено</span>
+                                </li>
+                                <li>
+											<span class="gold">
+												12040
+												<img src="@img/cabinet/cg.svg" alt="done"/>
+											</span>
+                                    <span>Осталось</span>
+                                </li>
+                                <li>
+											<span class="gold">
+												12040
+												<img src="@img/cabinet/cg.svg" alt="done"/>
+											</span>
+                                    <span>Всего нужно</span>
+                                </li>
+                            </ul>
+                            <div class="cabinetHome__yourlvl-body--progress">
+                                <span style="width: 40%"></span>
+                            </div>
+                        </div>
+                        <div class="cabinetHome__yourlvl-footer">
+									<span
+                                    >ПОДАРОК ЗА<br/>
+										СЛЕДУЮЩИЙ УРОВЕНЬ</span
+                                    >
+                            <img src="@img/cabinet/car.svg" alt="next-gift"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="cabinetHome__reflvl reflvl">
+                    <div class="cabinetHome__reflvl-wrapper reflvl__wrapper">
+                        @@include('html/_cabinet-reflvl.htm',{})
+                    </div>
+                </div>
+                <div class="cabinetHome__latest">
+                    <div class="cabinetHome__latest-item regpar">
+                        <div class="cabinetHome__latest-wrapper">
+                            <div class="cabinetHome__latest-title">
+                                Последние зарегистрированные партнеры
+                            </div>
+                            <table class="cabinetHome__latest-table">
+                                <thead>
+                                <tr>
+                                    <th>Логин</th>
+                                    <th>Дата регистрации</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <span>User</span>
+                                        <span>
+														<img src="@img/cabinet/mail.svg" alt="mail"/>
+														testmail@gmail
+													</span>
+                                    </td>
+                                    <td>11.03.2021 18:03</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>User</span>
+                                        <span>
+														<img src="@img/cabinet/mail.svg" alt="mail"/>
+														testmail@gmail
+													</span>
+                                    </td>
+                                    <td>11.03.2021 18:03</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>User</span>
+                                        <span>
+														<img src="@img/cabinet/mail.svg" alt="mail"/>
+														testmail@gmail
+													</span>
+                                    </td>
+                                    <td>11.03.2021 18:03</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>User</span>
+                                        <span>
+														<img src="@img/cabinet/mail.svg" alt="mail"/>
+														testmail@gmail
+													</span>
+                                    </td>
+                                    <td>11.03.2021 18:03</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>User</span>
+                                        <span>
+														<img src="@img/cabinet/mail.svg" alt="mail"/>
+														testmail@gmail
+													</span>
+                                    </td>
+                                    <td>11.03.2021 18:03</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="cabinetHome__latest-item ref">
+                        <div class="cabinetHome__latest-wrapper">
+                            <div class="cabinetHome__latest-title">
+                                Последние полученные реферальные
+                            </div>
+                            <table class="cabinetHome__latest-table">
+                                <thead>
+                                <tr>
+                                    <th>Логин</th>
+                                    <th>Сумма депозита</th>
+                                    <th>Реферальные</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>User</td>
+                                    <td>
+													<span class="gold">
+														0.10
+														<img src="@img/cabinet/cg.svg" alt="dep-sum"/>
+													</span>
+                                    </td>
+                                    <td>
+													<span>
+														0.10
+														<img
+                                                                src="@img/cabinet/cg-white.svg"
+                                                                alt="ref-sum"
+                                                        />
+													</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>User</td>
+                                    <td>
+													<span class="gold">
+														0.10
+														<img src="@img/cabinet/cg.svg" alt="dep-sum"/>
+													</span>
+                                    </td>
+                                    <td>
+													<span>
+														0.10
+														<img
+                                                                src="@img/cabinet/cg-white.svg"
+                                                                alt="ref-sum"
+                                                        />
+													</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>User</td>
+                                    <td>
+													<span class="gold">
+														0.10
+														<img src="@img/cabinet/cg.svg" alt="dep-sum"/>
+													</span>
+                                    </td>
+                                    <td>
+													<span>
+														0.10
+														<img
+                                                                src="@img/cabinet/cg-white.svg"
+                                                                alt="ref-sum"
+                                                        />
+													</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>User</td>
+                                    <td>
+													<span class="gold">
+														0.10
+														<img src="@img/cabinet/cg.svg" alt="dep-sum"/>
+													</span>
+                                    </td>
+                                    <td>
+													<span>
+														0.10
+														<img
+                                                                src="@img/cabinet/cg-white.svg"
+                                                                alt="ref-sum"
+                                                        />
+													</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>User</td>
+                                    <td>
+													<span class="gold">
+														0.10
+														<img src="@img/cabinet/cg.svg" alt="dep-sum"/>
+													</span>
+                                    </td>
+                                    <td>
+													<span>
+														0.10
+														<img
+                                                                src="@img/cabinet/cg-white.svg"
+                                                                alt="ref-sum"
+                                                        />
+													</span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="cabinetHome__latest-item cab">
+                        <div class="cabinetHome__latest-wrapper">
+                            <div class="cabinetHome__latest-title">
+                                Последние операции по кабинету
+                            </div>
+                            <table class="cabinetHome__latest-table">
+                                <thead>
+                                <tr>
+                                    <th>Тип операции</th>
+                                    <th>Дата операции</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <span>Вклад</span>
+                                        <span>
+														<img
+                                                                src="@img/cabinet/banknota.svg"
+                                                                alt="banknota"
+                                                        />
+														100.00$
+													</span>
+                                    </td>
+                                    <td>11.03.2021 18:03</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Вклад</span>
+                                        <span>
+														<img
+                                                                src="@img/cabinet/banknota.svg"
+                                                                alt="banknota"
+                                                        />
+														100.00$
+													</span>
+                                    </td>
+                                    <td>11.03.2021 18:03</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Вклад</span>
+                                        <span>
+														<img
+                                                                src="@img/cabinet/banknota.svg"
+                                                                alt="banknota"
+                                                        />
+														100.00$
+													</span>
+                                    </td>
+                                    <td>11.03.2021 18:03</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Вклад</span>
+                                        <span>
+														<img
+                                                                src="@img/cabinet/banknota.svg"
+                                                                alt="banknota"
+                                                        />
+														100.00$
+													</span>
+                                    </td>
+                                    <td>11.03.2021 18:03</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Вклад</span>
+                                        <span>
+														<img
+                                                                src="@img/cabinet/banknota.svg"
+                                                                alt="banknota"
+                                                        />
+														100.00$
+													</span>
+                                    </td>
+                                    <td>11.03.2021 18:03</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        @@include('html/_footer-fix.htm',{})
+    </div>
+</div>
+@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</body>
 </html>

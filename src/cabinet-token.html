@@ -1,101 +1,101 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('html/_head-fix.htm',{ "title":"Кабинет - Токен" })
-	<body class="cabinet">
-		<div class="cabinet__wrapper">
-			@@include('html/_cabinet-aside.htm',{})
-			<div class="wrapper">
-				<main class="page">
-					@@include('html/_cabinet-header.htm',{})
-					@@include('html/_cabinet-topbar.htm',{})
-					<div class="cabtoken">
-						<div class="cabtoken__purchase">
-							<div class="cabtoken__title cabinet__title_36">
-								Как приобрести CG Token
-							</div>
-							<div class="cabtoken__purchase-wrapper">
-								<div class="cabtoken__purchase-inner">
-									<div class="cabtoken__purchase-descr">
-										Все операции на платформе ukgholding.com происходят с
-										помощью цифрового активна
-										<span class="gold">CRYPTO GOLD TOKEN</span>. Стать
-										владельцем <span class="gold">CG ТОКЕНА</span><br />
-										вы можете одним из 2-х способов:
-									</div>
-									<ul class="cabtoken__purchase-list">
-										<li>
-											<div>
-												- купить токен на криптобирже -
-												<span class="gold">BTC-ALPHA</span>
-											</div>
-											<a href="#">
-												<div>
-													<span><span class="gold">BTC</span></span>
-												</div>
-												<div>
-													<span><span class="gold">ALPHA</span></span>
-												</div>
-												<span class="gold">Криптобиржа BTC-ALPHA</span>
-											</a>
-										</li>
-										<li>
-											<div>
-												- воспользоваться телеграм-ботом наших партнеров. <br />
-												которые предоставляют услуги по продаже
-												<span class="gold">CG TOKEN</span>
-											</div>
-											<a href="#">
-												<div>
+@@include('html/_head-fix.htm',{ "title":"Кабинет - Токен" })
+<body class="cabinet">
+<div class="cabinet__wrapper">
+    @@include('html/_cabinet-aside.htm',{})
+    <div class="wrapper">
+        <main class="page">
+            @@include('html/_cabinet-header.htm',{})
+            @@include('html/_cabinet-topbar.htm',{})
+            <div class="cabtoken">
+                <div class="cabtoken__purchase">
+                    <div class="cabtoken__title cabinet__title_36">
+                        Как приобрести CG Token
+                    </div>
+                    <div class="cabtoken__purchase-wrapper">
+                        <div class="cabtoken__purchase-inner">
+                            <div class="cabtoken__purchase-descr">
+                                Все операции на платформе ukgholding.com происходят с
+                                помощью цифрового активна
+                                <span class="gold">CRYPTO GOLD TOKEN</span>. Стать
+                                владельцем <span class="gold">CG ТОКЕНА</span><br/>
+                                вы можете одним из 2-х способов:
+                            </div>
+                            <ul class="cabtoken__purchase-list">
+                                <li>
+                                    <div>
+                                        - купить токен на криптобирже -
+                                        <span class="gold">BTC-ALPHA</span>
+                                    </div>
+                                    <a href="#">
+                                        <div>
+                                            <span><span class="gold">BTC</span></span>
+                                        </div>
+                                        <div>
+                                            <span><span class="gold">ALPHA</span></span>
+                                        </div>
+                                        <span class="gold">Криптобиржа BTC-ALPHA</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div>
+                                        - воспользоваться телеграм-ботом наших партнеров. <br/>
+                                        которые предоставляют услуги по продаже
+                                        <span class="gold">CG TOKEN</span>
+                                    </div>
+                                    <a href="#">
+                                        <div>
 													<span
-														><img
-															src="@img/cabinet/token-tg.svg"
-															alt="Вот обменник в telegram"
-													/></span>
-												</div>
-												<span class="gold">Вот обменник в telegram</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="cabtoken__topup">
-							<div
-								class="cabtoken__topup-title cabtoken__title cabinet__title_36"
-							>
-								Пополнить токены
-							</div>
-							<div class="cabtoken__topup-wrapper">
-								<div class="cabtoken__topup-inner">
-									<div class="cabtoken__topup-subtitle">
-										Введите сумму пополнения
-									</div>
-									<div class="cabtoken__topup-line">
-										<input
-											autocomplete="off"
-											type="text"
-											name="topup"
-											class="cabtoken__topup-input"
-										/>
-										<img
-											src="@img/cabinet/cg-white.svg"
-											alt="Пополнить токены"
-										/>
-									</div>
-									<button
-										type="submit"
-										class="cabtoken__topup-button button button_gold"
-									>
-										Пополнить баланс
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</main>
-				@@include('html/_footer-fix.htm',{})
-			</div>
-		</div>
-		@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
-	</body>
+                                                    ><img
+                                                            src="@img/cabinet/token-tg.svg"
+                                                            alt="Вот обменник в telegram"
+                                                    /></span>
+                                        </div>
+                                        <span class="gold">Вот обменник в telegram</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cabtoken__topup">
+                    <div
+                            class="cabtoken__topup-title cabtoken__title cabinet__title_36"
+                    >
+                        Пополнить токены
+                    </div>
+                    <div class="cabtoken__topup-wrapper">
+                        <div class="cabtoken__topup-inner">
+                            <div class="cabtoken__topup-subtitle">
+                                Введите сумму пополнения
+                            </div>
+                            <div class="cabtoken__topup-line">
+                                <input
+                                        autocomplete="off"
+                                        type="text"
+                                        name="topup"
+                                        class="cabtoken__topup-input focus:outline-none"
+                                />
+                                <img
+                                        src="@img/cabinet/cg-white.svg"
+                                        alt="Пополнить токены"
+                                />
+                            </div>
+                            <a
+                                    href="/cabinet-topup.html"
+                                    class="cabtoken__topup-button button button_gold"
+                            >
+                                Пополнить баланс
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        @@include('html/_footer-fix.htm',{})
+    </div>
+</div>
+@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</body>
 </html>

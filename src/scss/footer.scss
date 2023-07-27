@@ -1,11 +1,6 @@
 //====================================================================================================
 .footer {
 	@include adaptiveValue('margin-top', 130, 25);
-	background: linear-gradient(
-		180deg,
-		rgba(0, 0, 0, 0) 12.57%,
-		rgba(66, 66, 66, 0.58) 100%
-	);
 	padding-bottom: 30px;
 	/* .footer__container */
 	&__container {

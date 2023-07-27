@@ -3,16 +3,17 @@
 
 <head>
 	<title>Кабинет - Восстановление пароля</title>
-	<meta charset="UTF-8" />
-	<meta name="format-detection" content="telephone=no" />
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221214145754" />
-	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230727174621">
+	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<meta name="viewport" content="width=1660" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com?_v=20230727174621"></script>
 </head>
 
-<body class="cabinet">
+<body>
 	<div class="wrapper">
 		<main class="page">
 			<div class="cabinet__container">
@@ -34,83 +35,85 @@
 							</button>
 						</form>
 						<div class="cabinet__form-links">
-							<a href="#">Вход</a>
-							<a href="#">Регистрация</a>
+							<a href="cabinet-signin.html">Вход</a>
+							<a href="cabinet-registration.html">Регистрация</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</main>
 		<footer class="footer">
-			<div class="footer__wrapper">
-				<div class="footer__logo">
-					<img src="img/logo/logo.svg" alt="logo_footer" />
-				</div>
-				<nav class="footer__menu">
-					<ul>
-						<li><a href="#">О компании</a></li>
-						<li><a href="#">Партнерам</a></li>
-						<li><a href="#">Online</a></li>
-						<li><a href="#">Инвесторам</a></li>
-						<li><a href="#">Производство</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-				</nav>
-				<div class="footer__contacts">
-					<div class="footer__contacts-title footer__title">Контакты</div>
-					<div class="footer__contacts-body">
-						Венгрией и другими европейскими странами.
+			<div class="footer__container">
+				<div class="footer__wrapper">
+					<div class="footer__logo">
+						<img src="img/logo/logo.svg" alt="logo_footer" />
 					</div>
-					<a href="mailto:support@u-kg.com" class="footer__contacts-email gold">
-						support@u-kg.com
-					</a>
-				</div>
-				<div class="footer__feedback">
-					<div class="footer__feedback-title footer__title">Обратная связь</div>
-					<div class="footer__feedback-body">
-						Хочешь узнать о новинках? <br />
-						Все события, скидки,<br />
-						предложения и новости здесь
+					<nav class="footer__menu">
+						<ul>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Партнерам</a></li>
+							<li><a href="#">Online</a></li>
+							<li><a href="#">Инвесторам</a></li>
+							<li><a href="#">Производство</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="footer__contacts">
+						<div class="footer__contacts-title footer__title">Контакты</div>
+						<div class="footer__contacts-body">
+							Венгрией и другими европейскими странами.
+						</div>
+						<a href="mailto:UKGholding@gmail.com" class="footer__contacts-email gold">
+							UKGholding@gmail.com
+						</a>
 					</div>
-				</div>
-				<div class="footer__social social">
-					<div class="footer__social-title social__title">Социальные сети</div>
-					<ul>
-						<li>
-							<a href="#">
-								<img src="img/social/youtube.svg" alt="youtube" />
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="img/social/facebook.svg" alt="facebook" />
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="img/social/instagram.svg" alt="instagram" />
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="img/social/telegram.svg" alt="telegram" />
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="footer__copyright">
-					<span>“U-KG Holding” LLC 2021 © Все права защищены</span>
-					<a href="#" class="footer__terms gold">Правила и соглашения</a>
-				</div>
-				<button class="footer__btn button button_transparent">
-					<div><span>Обратная связь</span></div>
-				</button>
-				<div class="footer__lang lang">
-					<img src="img/icons/arrow-down-small.svg" alt="arrow-down-lang" />
-					<select name="lang__list" class="lang__list">
-						<option value="1" selected>Ru</option>
-						<option value="2">Eng</option>
-					</select>
+					<div class="footer__feedback">
+						<div class="footer__feedback-title footer__title">Обратная связь</div>
+						<div class="footer__feedback-body">
+							Хочешь узнать о новинках? <br />
+							Все события, скидки,<br />
+							предложения и новости здесь
+						</div>
+					</div>
+					<div class="footer__social social">
+						<div class="footer__social-title social__title">Социальные сети</div>
+						<ul>
+							<li>
+								<a href="#">
+									<img src="img/social/youtube.svg" alt="youtube" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/social/facebook.svg" alt="facebook" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/social/instagram.svg" alt="instagram" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/social/telegram.svg" alt="telegram" />
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__copyright">
+						<span>“UKG Holding” 2021 © Все права защищены</span>
+						<a href="#" class="footer__terms gold">Правила и соглашения</a>
+					</div>
+					<button class="footer__btn button button_transparent">
+						<div><span>Обратная связь</span></div>
+					</button>
+					<div class="footer__lang lang">
+						<img src="img/icons/arrow-down-small.svg" alt="arrow-down-lang" />
+						<select name="lang__list" class="lang__list">
+							<option value="1" selected>Ru</option>
+							<option value="2">Eng</option>
+						</select>
+					</div>
 				</div>
 			</div>
 		</footer>
@@ -127,7 +130,7 @@
 	</div>
 </div>
  -->
-	<script src="js/app.min.js?_v=20221214145754"></script>
+	<script src="js/app.min.js?_v=20230727174621"></script>
 </body>
 
 </html>
