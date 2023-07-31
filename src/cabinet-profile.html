@@ -8,167 +8,177 @@
         <main class="page">
             @@include('html/_cabinet-header.htm',{})
             @@include('html/_cabinet-topbar.htm',{})
-            <div data-tabs class="cabprofile">
-                <div class="cabprofile__wrapper">
-                    <div class="cabprofile__top">
-                        <div class="cabprofile__title cabinet__title_36">
+            <div data-tabs class="cabProfile">
+                <div class="cabProfile__wrapper">
+                    <div class="cabProfile__top">
+                        <div class="cabProfile__title cabinet__title_36">
                             Мой профиль
                         </div>
-                        <nav data-tabs-titles class="cabprofile__navigation">
-                            <button type="button" class="cabprofile__title _tab-active">
+                        <nav data-tabs-titles class="cabProfile__navigation">
+                            <button type="button" class="cabProfile__title _tab-active">
                                 Личные данные
                             </button>
-                            <button type="button" class="cabprofile__title">
+                            <button type="button" class="cabProfile__title">
                                 Смена пароля
                             </button>
-                            <button type="button" class="cabprofile__title">
+                            <button type="button" class="cabProfile__title">
                                 Настройка безопасности
                             </button>
                         </nav>
                     </div>
-                    <div data-tabs-body data-tabs-hash class="cabprofile__content">
-                        <div class="cabprofile__body perdata">
-                            <form action="#" class="cabprofile__form perdata__form">
-                                <div class="cabprofile__form-item">
+                    <div data-tabs-body data-tabs-hash class="cabProfile__content">
+                        <div class="cabProfile__body perdata">
+                            <form action="#" class="cabProfile__form perdata__form">
+                                <div class="cabProfile__form-item">
                                     <label for="name">ФИО:</label>
                                     <input
+                                            id="name"
                                             autocomplete="off"
                                             type="text"
                                             name="name"
-                                            class="cabprofile__form-input"
+                                            class="cabProfile__form-input"
                                     />
                                 </div>
-                                <div class="cabprofile__form-item">
+                                <div class="cabProfile__form-item">
                                     <label for="email">Почта:</label>
                                     <input
+                                            id="email"
                                             autocomplete="off"
                                             type="text"
                                             name="email"
-                                            class="cabprofile__form-input"
+                                            class="cabProfile__form-input"
                                     />
                                 </div>
-                                <div class="cabprofile__form-item">
+                                <div class="cabProfile__form-item">
                                     <label for="login">Логин:</label>
                                     <input
+                                            id="login"
                                             autocomplete="off"
                                             type="text"
                                             name="login"
-                                            class="cabprofile__form-input"
+                                            class="cabProfile__form-input"
                                     />
                                 </div>
-                                <div class="cabprofile__form-item">
+                                <div class="cabProfile__form-item">
                                     <label for="phone">Номер телефона:</label>
                                     <input
+                                            id="phone"
                                             autocomplete="off"
                                             type="text"
                                             name="phone"
-                                            class="cabprofile__form-input"
+                                            class="cabProfile__form-input"
                                     />
                                 </div>
-                                <div class="cabprofile__form-item">
+                                <div class="cabProfile__form-item">
                                     <label for="telegram">Телеграм:</label>
                                     <input
+                                            id="telegram"
                                             autocomplete="off"
                                             type="text"
                                             name="telegram"
-                                            class="cabprofile__form-input"
+                                            class="cabProfile__form-input"
                                     />
                                 </div>
-                                <div class="cabprofile__form-item">
+                                <div class="cabProfile__form-item">
                                     <label for="tron">TRON:</label>
                                     <input
+                                            id="tron"
                                             autocomplete="off"
                                             type="text"
                                             name="tron"
-                                            class="cabprofile__form-input"
+                                            class="cabProfile__form-input"
                                     />
                                 </div>
-                                <div class="cabprofile__form-item">
+                                <div class="cabProfile__form-item">
                                     <label for="whatsapp">WHATSAPP:</label>
                                     <input
+                                            id="whatsapp"
                                             autocomplete="off"
                                             type="text"
                                             name="whatsapp"
-                                            class="cabprofile__form-input"
+                                            class="cabProfile__form-input"
                                     />
                                 </div>
                                 <button
                                         type="submit"
-                                        class="cabprofile__form-button button button_gold"
+                                        class="cabProfile__form-button button button_gold"
                                 >
                                     Сохранить
                                 </button>
                             </form>
                         </div>
-                        <div class="cabprofile__body changepw">
-                            <form action="#" class="cabprofile__form changepw__form">
-                                <div class="cabprofile__form-item">
+                        <div class="cabProfile__body changepw">
+                            <form action="#" class="cabProfile__form changepw__form">
+                                <div class="cabProfile__form-item">
                                     <label for="old">ВАШ ТЕКУЩИЙ ПАРОЛЬ:</label>
                                     <input
+                                            id="old"
                                             autocomplete="off"
                                             type="text"
                                             name="old"
-                                            class="cabprofile__form-input"
+                                            class="cabProfile__form-input"
                                     />
                                 </div>
-                                <div class="cabprofile__form-item">
+                                <div class="cabProfile__form-item">
                                     <label for="new">НОВЫЙ ПАРОЛЬ:</label>
                                     <input
+                                            id="new"
                                             autocomplete="off"
                                             type="password"
                                             name="new"
-                                            class="cabprofile__form-input"
+                                            class="cabProfile__form-input"
                                     />
                                 </div>
-                                <div class="cabprofile__form-item">
+                                <div class="cabProfile__form-item">
                                     <label for="repnew">ПОВТОРИТЕ НОВЫЙ ПАРОЛЬ:</label>
                                     <input
+                                            id="repnew"
                                             autocomplete="off"
                                             type="password"
                                             name="repnew"
-                                            class="cabprofile__form-input"
+                                            class="cabProfile__form-input"
                                     />
                                 </div>
                                 <button
                                         type="submit"
-                                        class="cabprofile__form-button button button_gold"
+                                        class="cabProfile__form-button button button_gold"
                                 >
                                     Сохранить
                                 </button>
                             </form>
                         </div>
-                        <div class="cabprofile__body security">
-                            <form action="#" class="cabprofile__form security__form">
-                                <div class="cabprofile__form-item">
+                        <div class="cabProfile__body security">
+                            <form action="#" class="cabProfile__form security__form">
+                                <div class="cabProfile__form-item">
                                     <label for="gmt">ВАШ ЧАСОВОЙ ПОЯС (ОТ GMT): </label>
-                                    <select name="gmt" class="cabprofile__form-select">
+                                    <select id=gmt name="gmt" class="cabProfile__select">
                                         <option value="1" selected>+0:00</option>
                                         <option value="2">+1:00</option>
                                         <option value="3">+2:00</option>
                                         <option value="4">+3:00</option>
                                     </select>
-                                    <div class="cabprofile__form-checkbox checkbox">
+                                    <div class="cabProfile__form-checkbox checkbox">
                                         <input
-                                                id="notificationemail"
+                                                id="notificationEmail"
                                                 class="checkbox__input"
                                                 type="checkbox"
                                                 value="1"
-                                                name="notificationemail"
+                                                name="notificationEmail"
                                         />
-                                        <label for="notificationemail" class="checkbox__label"
+                                        <label for="notificationEmail" class="checkbox__label"
                                         ><span class="checkbox__text"
                                         >Не получать оповещения на e-mail
 													</span></label
                                         >
                                     </div>
                                 </div>
-                                <div class="cabprofile__form-item">
+                                <div class="cabProfile__form-item">
                                     <label for="ip">КОНТРОЛЬ СМЕНЫ IP-АДРЕСЫ: </label>
-                                    <select name="ip" class="cabprofile__form-select">
+                                    <select id="ip" name=ip class="cabProfile__select">
                                         <option value="1" selected>по умолчанию</option>
                                         <option value="2">динамически</option>
                                     </select>
-                                    <div class="cabprofile__form-checkbox checkbox">
+                                    <div class="cabProfile__form-checkbox checkbox">
                                         <input
                                                 id="ipsession"
                                                 class="checkbox__input"
@@ -182,7 +192,7 @@
 													</span></label
                                         >
                                     </div>
-                                    <div class="cabprofile__form-checkbox checkbox">
+                                    <div class="cabProfile__form-checkbox checkbox">
                                         <input
                                                 id="parsession"
                                                 class="checkbox__input"
@@ -197,45 +207,47 @@
                                         >
                                     </div>
                                 </div>
-                                <div class="cabprofile__form-item">
-                                    <label for="autoexit"
+                                <div class="cabProfile__form-item">
+                                    <label for="autoExit"
                                     >АВТОВЫХОД ЧЕРЕЗ N МИНУТ (0 ПО УМОЛЧАНИЮ):</label
                                     >
-                                    <select name="autoexit" class="cabprofile__form-select">
+                                    <select id="autoExit" name="autoExit" class="cabProfile__select">
                                         <option value="1" selected>0- по умолчанию</option>
                                         <option value="2">10</option>
                                         <option value="3">30</option>
                                         <option value="4">60</option>
                                     </select>
                                 </div>
-                                <div class="cabprofile__form-item">
+                                <div class="cabProfile__form-item">
                                     <label for="google">GOOGLE AUTHENTICATOR: </label>
-                                    <div class="cabprofile__form-subtitle">
+                                    <div class="cabProfile__form-subtitle">
                                         Для активации Google Authenticator используйте ключ:
                                     </div>
                                     <input
+                                            id="google"
                                             disabled
                                             autocomplete="off"
                                             type="text"
                                             name="google"
                                             value="RWX5C2NQW7WIHLKI"
-                                            class="cabprofile__form-input google-auth"
+                                            class="cabProfile__form-input google-auth"
                                     />
                                 </div>
-                                <div class="cabprofile__form-item">
+                                <div class="cabProfile__form-item">
                                     <label for="google_input"
                                     >ВВЕДИТЕ КОД ИЗ ПРИЛОЖЕНИЯ:
                                     </label>
                                     <input
+                                            id="google_input"
                                             autocomplete="off"
                                             type="text"
                                             name="google_input"
-                                            class="cabprofile__form-input"
+                                            class="cabProfile__form-input"
                                     />
                                 </div>
                                 <button
                                         type="submit"
-                                        class="cabprofile__form-button button button_gold"
+                                        class="cabProfile__form-button button button_gold"
                                 >
                                     Сохранить
                                 </button>

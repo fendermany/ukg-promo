@@ -1,358 +1,375 @@
 // Слайдер
 
-.cabinvest {
-	margin-top: 19px;
-	/* .cabinvest__slider */
-	&__slider {
-		ul {
-			li {
-				box-shadow: 0px 25px 21px rgba(228, 201, 149, 0.14);
-				border-radius: 12px;
-				padding: 24px 17px;
-			}
-		}
-	}
+.cabInvest {
+  margin-top: 19px;
+  /* .cabInvest__slider */
+  &__slider {
+    ul {
+      li {
+        box-shadow: 0px 25px 21px rgba(228, 201, 149, 0.14);
+        border-radius: 12px;
+        padding: 24px 17px;
+      }
+    }
+  }
 
-	/* .cabinvest__slider-top */
-	&__slider-top,
-	&__slider-third,
-	&__slider-fourth,
-	&__slider-fifth {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		span {
-			&:first-child {
-				font-weight: 500;
-				font-size: 14px;
-				line-height: 23px;
-				color: #000000;
-			}
-			&:nth-child(2) {
-				background: linear-gradient(
-					175.49deg,
-					#292929 11.91%,
-					rgba(41, 41, 41, 0.51) 368.29%
-				);
-				font-size: 14px;
-				line-height: 16px;
-				border-radius: 10px;
-				height: 27px;
-				width: 54px;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-			}
-		}
-	}
+  /* .cabInvest__slider-top */
+  &__slider-top,
+  &__slider-third,
+  &__slider-fourth,
+  &__slider-fifth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-	/* .cabinvest__slider-second */
-	&__slider-second {
-		margin-top: 8px;
-		margin-bottom: 5px;
-		background: linear-gradient(
-			175.49deg,
-			#292929 11.91%,
-			rgba(41, 41, 41, 0.51) 368.29%
-		);
-		border-radius: 10px;
-		width: 297px;
-		height: 45px;
-		display: flex;
-		align-items: center;
-		padding: 0 10px;
-		& > span {
-			font-size: 12px;
-			line-height: 14px;
-			margin-right: 50px;
-			& > span {
-				font-size: 20px;
-				line-height: 23px;
-			}
-		}
-	}
+    span {
+      &:first-child {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 23px;
+        color: #000000;
+      }
 
-	/* .cabinvest__slider-third */
-	&__slider-third {
-		margin-bottom: 7px;
-	}
+      &:nth-child(2) {
+        background: linear-gradient(
+                        175.49deg,
+                        #292929 11.91%,
+                        rgba(41, 41, 41, 0.51) 368.29%
+        );
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 10px;
+        height: 27px;
+        width: 54px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
 
-	/* .cabinvest__slider-fourth */
-	&__slider-fourth {
-		margin-bottom: 7px;
-	}
+  /* .cabInvest__slider-second */
+  &__slider-second {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    background: linear-gradient(
+                    175.49deg,
+                    #292929 11.91%,
+                    rgba(41, 41, 41, 0.51) 368.29%
+    );
+    border-radius: 10px;
+    width: 297px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
 
-	/* .cabinvest__slider-fifth */
-	&__slider-fifth {
-		button {
-			border: 1px solid #000000;
-			border-radius: 12px;
-			font-weight: 500;
-			font-size: 14px;
-			line-height: 17px;
-			color: #202020;
-			width: 140px;
-			height: 38px;
-			text-transform: uppercase;
-			padding: 0 10px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-	}
+    & > span {
+      font-size: 12px;
+      line-height: 14px;
+      margin-right: 50px;
+
+      & > span {
+        font-size: 20px;
+        line-height: 23px;
+      }
+    }
+  }
+
+  /* .cabInvest__slider-third */
+  &__slider-third {
+    margin-bottom: 7px;
+  }
+
+  /* .cabInvest__slider-fourth */
+  &__slider-fourth {
+    margin-bottom: 7px;
+  }
+
+  /* .cabInvest__slider-fifth */
+  &__slider-fifth {
+    a {
+      border: 1px solid #000000;
+      border-radius: 12px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #202020;
+      width: 140px;
+      height: 38px;
+      text-transform: uppercase;
+      padding: 0 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
 
 .slide-gold {
-	background: linear-gradient(
-		92.35deg,
-		#b48a3d 9.32%,
-		#fcecce 50.74%,
-		#ccab6c 95.84%
-	);
+  background: linear-gradient(
+                  92.35deg,
+                  #b48a3d 9.32%,
+                  #fcecce 50.74%,
+                  #ccab6c 95.84%
+  );
 }
 
 .slide-silver {
-	background: linear-gradient(
-		92.35deg,
-		#b5b6bf 9.32%,
-		#fdfdfd 50.74%,
-		#93949f 95.84%
-	);
+  background: linear-gradient(
+                  92.35deg,
+                  #b5b6bf 9.32%,
+                  #fdfdfd 50.74%,
+                  #93949f 95.84%
+  );
 }
 
 // Калькулятор
 
-.cabinvest {
-	/* .cabinvest__calc */
-	&__calc {
-		margin-top: 36px;
-		padding-top: 30px;
-		border-top: 1px solid rgba(255, 255, 255, 0.2);
-		display: grid;
-		grid-template: 420px / 795px 1fr;
-		column-gap: 40px;
-	}
+.cabInvest {
+  /* .cabInvest__calc */
+  &__calc {
+    margin-top: 36px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    display: grid;
+    grid-template: 420px / 795px 1fr;
+    column-gap: 40px;
+  }
 
-	/* .cabinvest__calc-inputs */
-	&__calc-inputs {
-		background: linear-gradient(
-			92.35deg,
-			#b48a3d 9.32%,
-			#fcecce 50.74%,
-			#ccab6c 95.84%
-		);
-		box-shadow: 0px 4px 73px #000000;
-		border-radius: 10px;
-		padding: 1px;
-	}
+  /* .cabInvest__calc-inputs */
+  &__calc-inputs {
+    background: linear-gradient(
+                    92.35deg,
+                    #b48a3d 9.32%,
+                    #fcecce 50.74%,
+                    #ccab6c 95.84%
+    );
+    box-shadow: 0px 4px 73px #000000;
+    border-radius: 10px;
+    padding: 1px;
+  }
 
-	/* .cabinvest__calc-left--inputs */
-	&__calc-inputs--wrapper {
-		border-radius: 10px;
-		padding: 30px 45px 40px 45px;
-		background: #000;
-		height: 100%;
-	}
+  /* .cabInvest__calc-left--inputs */
+  &__calc-inputs--wrapper {
+    border-radius: 10px;
+    padding: 30px 45px 40px 45px;
+    background: #000;
+    height: 100%;
+  }
 
-	/* .cabinvest__calc-title */
-	&__calc-title {
-	}
+  /* .cabInvest__calc-title */
+  &__calc-title {
+  }
 
-	/* .cabinvest__calc-list */
-	&__calc-list {
-		margin-top: 16px;
-	}
+  /* .cabInvest__calc-list */
+  &__calc-list {
+    margin-top: 16px;
+  }
 
-	/* .cabinvest__calc-item */
-	&__calc-item {
-		& + .cabinvest__calc-item {
-			margin-top: 30px;
-		}
-	}
+  /* .cabInvest__calc-item */
+  &__calc-item {
+    & + .cabInvest__calc-item {
+      margin-top: 30px;
+    }
+  }
 
-	/* .cabinvest__calc-subtitle */
-	&__calc-subtitle {
-		font-size: 16px;
-		line-height: 12px;
-		color: #7a7a7a;
-	}
+  /* .cabInvest__calc-subtitle */
+  &__calc-subtitle {
+    font-size: 16px;
+    line-height: 12px;
+    color: #7a7a7a;
+  }
 
-	/* .cabinvest__calc-select */
-	&__calc-select {
-		margin-top: 14px;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		height: 65px;
-		background: rgba(255, 255, 255, 0.05);
-		box-shadow: 0px 4px 73px #000000;
-		font-size: 16px;
-		line-height: 23px;
-		text-transform: uppercase;
-		cursor: pointer;
-	}
-	&__calc-img {
-		width: 22px;
-		height: 12px;
-		img {
-			width: 100%;
-			height: 100%;
-		}
-	}
+  /* .cabInvest__calc-select */
+  &__calc-select {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 4px 73px #000000;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
 
-	/* .cabinvest__calc-button */
-	&__calc-button {
-		margin-top: 27px;
-		width: 205px;
-	}
+  &__calc-img {
+    width: 22px;
+    height: 12px;
 
-	/* .cabinvest__calc-result */
-	&__calc-result {
-		background: linear-gradient(
-			92.35deg,
-			#b48a3d 9.32%,
-			#fcecce 50.74%,
-			#ccab6c 95.84%
-		);
-		box-shadow: 0px 4px 73px #000000;
-		border-radius: 10px;
-		padding: 1px;
-	}
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 
-	/* .cabinvest__calc-result--wrapper */
-	&__calc-result--wrapper {
-		border-radius: 10px;
-		padding: 30px 45px 40px 45px;
-		background: #000;
-		height: 100%;
-		padding: 38px 123px 42px 40px;
-	}
+  /* .cabInvest__calc-button */
+  &__calc-button {
+    margin-top: 27px;
+    width: 205px;
+  }
 
-	/* .cabinvest__calc-result--item */
-	&__calc-result--item {
-		&+.cabinvest__calc-result--item {
-			margin-top: 37px;
-		}
-		&:first-child {
-			.cabinvest__calc-result--body {
-				span{
-					height: 65px;
-				}
-			}
-		}
-		&:nth-child(2) {
-			span{
-				height: 86px;
-			}
-		}
-	}
+  /* .cabInvest__calc-result */
+  &__calc-result {
+    background: linear-gradient(
+                    92.35deg,
+                    #b48a3d 9.32%,
+                    #fcecce 50.74%,
+                    #ccab6c 95.84%
+    );
+    box-shadow: 0px 4px 73px #000000;
+    border-radius: 10px;
+    padding: 1px;
+  }
 
-	/* .cabinvest__calc-result--title */
-	&__calc-result--title {
-		font-size: 16px;
-		line-height: 12px;
-		color: #7a7a7a;
-	}
+  /* .cabInvest__calc-result--wrapper */
+  &__calc-result--wrapper {
+    border-radius: 10px;
+    padding: 30px 45px 40px 45px;
+    background: #000;
+    height: 100%;
+    padding: 38px 123px 42px 40px;
+  }
 
-	/* .cabinvest__calc-result--body */
-	&__calc-result--body {
-		display: flex;
-		align-items: center;
-		margin-top: 12px;
-		& > span {
-			background: linear-gradient(
-				118.17deg,
-				rgba(41, 41, 41, 0.6) 19.54%,
-				rgba(41, 41, 41, 0.306) 87.61%
-			);
-			box-shadow: 0px 4px 73px #000000;
-			border-radius: 10px;
-			display: block;
-			display: flex;
-			align-items: center;
+  /* .cabInvest__calc-result--item */
+  &__calc-result--item {
+    & + .cabInvest__calc-result--item {
+      margin-top: 37px;
+    }
 
-			&:first-child {
-				width: 265px;
-				padding: 20px;
-				font-size: 34px;
-				line-height: 39px;
-				& > .gold {
-					display: flex;
-					align-items: center;
-					font-size: 48px;
-					line-height: 56px;
-				}
-			}
-			&:nth-child(2) {
-				margin-left: 13px;
-				width: 111px;
-				padding: 0 25px;
-				white-space: nowrap;
-				font-weight: 300;
-				font-size: 24px;
-				line-height: 23px;
-				opacity: 0.6;
-			}
-		}
-	}
+    &:first-child {
+      .cabInvest__calc-result--body {
+        span {
+          height: 65px;
+        }
+      }
+    }
 
-	/* .cabinvest__calc-result--footer */
-	&__calc-result--footer {
-		margin-top: 40px;
-		display: flex;
-		align-items: center;
-		&>div{
-			&:first-child{
-				background: linear-gradient(92.35deg,
-					#b48a3d 9.32%,
-					#fcecce 50.74%,
-					#ccab6c 95.84%);
-					border-radius: 10px;
-					padding: 1px;
-					box-shadow: 0px 4px 73px #000000;
-					width: max-content;
-					&>span{
-						background: #000;
-						border-radius: 10px;
-						height: 100%;
-						display: block;
-						padding: 16px 24px;
-						img{
-							width: 100%;
-							height: 100%;
-							object-fit: contain;
-						}
-					}
-			}
-		}
-		&>span{
-			font-size: 18px;
-			line-height: 21px;
-			margin-left: 20px;
-		}
-	}
+    &:nth-child(2) {
+      span {
+        height: 86px;
+      }
+    }
+  }
+
+  /* .cabInvest__calc-result--title */
+  &__calc-result--title {
+    font-size: 16px;
+    line-height: 12px;
+    color: #7a7a7a;
+  }
+
+  /* .cabInvest__calc-result--body */
+  &__calc-result--body {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+
+    & > span {
+      background: linear-gradient(
+                      118.17deg,
+                      rgba(41, 41, 41, 0.6) 19.54%,
+                      rgba(41, 41, 41, 0.306) 87.61%
+      );
+      box-shadow: 0px 4px 73px #000000;
+      border-radius: 10px;
+      display: block;
+      display: flex;
+      align-items: center;
+
+      &:first-child {
+        width: 265px;
+        padding: 20px;
+        font-size: 34px;
+        line-height: 39px;
+
+        & > .gold {
+          display: flex;
+          align-items: center;
+          font-size: 48px;
+          line-height: 56px;
+        }
+      }
+
+      &:nth-child(2) {
+        margin-left: 13px;
+        width: 111px;
+        padding: 0 25px;
+        white-space: nowrap;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 23px;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  /* .cabInvest__calc-result--footer */
+  &__calc-result--footer {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+
+    & > div {
+      &:first-child {
+        background: linear-gradient(92.35deg,
+                #b48a3d 9.32%,
+                #fcecce 50.74%,
+                #ccab6c 95.84%);
+        border-radius: 10px;
+        padding: 1px;
+        box-shadow: 0px 4px 73px #000000;
+        width: max-content;
+
+        & > span {
+          background: #000;
+          border-radius: 10px;
+          height: 100%;
+          display: block;
+          padding: 16px 24px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+
+    & > span {
+      font-size: 18px;
+      line-height: 21px;
+      margin-left: 20px;
+    }
+  }
 }
 
 
 // Ваши активные пулы
 
-.cabinvest {
+.cabInvest {
 
-	/* .cabinvest__pulls */
-	&__pulls {
-		margin-top: 40px;
-	}
+  /* .cabInvest__pulls */
+  &__pulls {
+    margin-top: 40px;
+  }
 
-	/* .cabinvest__pulls-title */
-	&__pulls-title {}
+  /* .cabInvest__pulls-title */
+  &__pulls-title {
+  }
 }
 
 .cabinet {
 
-	/* .cabinet__title */
-	&__title {
+  /* .cabinet__title */
+  &__title {
 
-		/* .cabinet__title_36 */
-		&_36 {}
-	}
+    /* .cabinet__title_36 */
+    &_36 {
+    }
+  }
 }

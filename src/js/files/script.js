@@ -147,7 +147,6 @@ document.addEventListener("DOMContentLoaded", () => {
       year: "numeric",
       hour: "2-digit",
       minute: "2-digit",
-      timeZoneName: "short",
     };
     return date.toLocaleString(undefined, options);
   }

@@ -1,102 +1,118 @@
 // Заголовки, общие БЄМ блоки и проче...
 .gold {
-	background: linear-gradient(
-		92.35deg,
-		#b48a3d 9.32%,
-		#fcecce 50.74%,
-		#ccab6c 95.84%
-	);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
-	text-fill-color: transparent;
-	text-shadow: 0px 25px 21px rgba(228, 201, 149, 0.14);
+  background-color: #b48a3d;
+  background-image: linear-gradient(
+                  92.35deg,
+                  #b48a3d 9.32%,
+                  #fcecce 50.74%,
+                  #ccab6c 95.84%
+  );
+
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  //text-shadow: 0 25px 21px rgba(228, 201, 149, 0.14);
+}
+
+a {
+  transition: 0.3s all;
+
+  &:hover {
+    text-shadow: 0 0 5px #fcecce, 0 0 20px #b48a3d, 0 0 40px #b48a3d, 0 0 60px #b48a3d, 0 0 80px #b48a3d, 0 0 100px #b48a3d, 0 0 120px #b48a3d;
+  }
 }
 
 .green {
-	color: #159300;
+  color: #159300;
 }
 
 .red {
-	color: #930000;
+  color: #930000;
 }
 
 .title {
-	@include adaptiveValue('font-size', 64, 26);
-	@include adaptiveValue('line-height', 74, 30);
-	text-transform: uppercase;
+  @include adaptiveValue('font-size', 64, 26);
+  @include adaptiveValue('line-height', 74, 30);
+  text-transform: uppercase;
 }
 
 .social {
-	ul {
-		display: flex;
-		li {
-			width: 32px;
-			height: 30px;
-			background: rgba(255, 255, 255, 0.12);
-			border-radius: 4px;
-			overflow: hidden;
-			& + li {
-				margin-left: 9px;
-			}
-			a {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				width: 100%;
-				height: 100%;
-			}
-		}
-	}
+  ul {
+    display: flex;
+
+    li {
+      width: 32px;
+      height: 30px;
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 4px;
+      overflow: hidden;
+
+      & + li {
+        margin-left: 9px;
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }
 
 .grey-block {
-	background: linear-gradient(
-		118.17deg,
-		rgba(41, 41, 41, 0.6) 19.54%,
-		rgba(41, 41, 41, 0.372) 87.61%
-	);
-	box-shadow: 0px 4px 73px #000000;
-	border-radius: 10px;
+  background: linear-gradient(
+                  118.17deg,
+                  rgba(41, 41, 41, 0.6) 19.54%,
+                  rgba(41, 41, 41, 0.372) 87.61%
+  );
+  box-shadow: 0px 4px 73px #000000;
+  border-radius: 10px;
 }
 
 .grey-block-dark {
-	background: linear-gradient(
-		118.17deg,
-		rgba(41, 41, 41, 0.6) 19.54%,
-		rgba(41, 41, 41, 0.306) 87.61%
-	);
-	box-shadow: 0px 4px 73px #000000;
-	border-radius: 10px;
+  background: linear-gradient(
+                  118.17deg,
+                  rgba(41, 41, 41, 0.6) 19.54%,
+                  rgba(41, 41, 41, 0.306) 87.61%
+  );
+  box-shadow: 0px 4px 73px #000000;
+  border-radius: 10px;
 }
 
 .grey-block-dark-414 {
-	background: linear-gradient(
-		116.66deg,
-		rgba(41, 41, 41, 0.6) 19.73%,
-		rgba(41, 41, 41, 0.414) 81.89%
-	);
-	box-shadow: 0px 4px 73px #000000;
-	border-radius: 10px;
+  background: linear-gradient(
+                  116.66deg,
+                  rgba(41, 41, 41, 0.6) 19.73%,
+                  rgba(41, 41, 41, 0.414) 81.89%
+  );
+  box-shadow: 0px 4px 73px #000000;
+  border-radius: 10px;
 }
 
 .cabinet__title {
-	font-size: 20px;
-	line-height: 23px;
-	text-transform: uppercase;
-	&>*.gold {
-		font-weight: 300;
-	}
-	&_36{
-		font-size: 36px;
-		line-height: 42px;
-		background: linear-gradient(92.35deg,
-			#b48a3d 9.32%,
-			#fcecce 50.74%,
-			#ccab6c 95.84%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
-		text-fill-color: transparent;
-	}
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+
+  & > *.gold {
+    font-weight: 300;
+  }
+
+  &_36 {
+    font-size: 36px;
+    line-height: 42px;
+    background: linear-gradient(92.35deg,
+            #b48a3d 9.32%,
+            #fcecce 50.74%,
+            #ccab6c 95.84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
 }

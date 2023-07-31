@@ -65,7 +65,7 @@
         z-index: 100;
 
         &:before {
-          animation: button 0.5s;
+          animation: button 0.5s infinite;
         }
       }
     }
@@ -160,8 +160,11 @@
     );
   }
 
-  25% {
+  20% {
     opacity: 1;
+  }
+
+  40% {
     background-image: linear-gradient(
                     152deg,
                     #b48a3d 11.32%,
@@ -170,8 +173,7 @@
     );
   }
 
-  50% {
-    opacity: 0;
+  60% {
     background-image: linear-gradient(
                     202deg,
                     #b48a3d 13.32%,
@@ -180,8 +182,7 @@
     );
   }
 
-  75% {
-    opacity: 1;
+  80% {
     background-image: linear-gradient(
                     202deg,
                     #b48a3d 13.32%,
