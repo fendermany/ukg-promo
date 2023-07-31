@@ -6,26 +6,33 @@
 	<meta charset="UTF-8" />
 	<meta name="format-detection" content="telephone=no" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230727174621" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230731124806" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=1660" />
-	<script src="https://cdn.tailwindcss.com?_v=20230727174621"></script>
+	<script src="https://cdn.tailwindcss.com?_v=20230731124806"></script>
+	<script>
+		tailwind.config = {
+			corePlugins: {
+				preflight: false,
+			}
+		}
+	</script>
 </head>
 
 <body class="cabinet">
 	<div class="cabinet__wrapper">
 		<aside class="cabinet__aside">
-			<div class="cabinet__aside-logo">
+			<a href="index.html" class="cabinet__aside-logo">
 				<img src="img/logo/logo.svg" alt="logo" />
-			</div>
+			</a>
 			<div class="cabinet__aside-welcome grey-block">
 				<span>Добро пожаловать</span>
 				<div class="cabinet__aside-welcome--name gold">Artem</div>
 				<span>Ваша реферальная ссылка</span>
-				<button id="copy" class="gold flex items-center space-x-1 copy">
-					<input autocomplete="off" type="text" name="reflink" value="https://demo.chyip.com/ethnicfinance2/?reg=zzzzz" class="pointer-events-none bg-transparent" id="copy-input" />
-					<img src="img/cabinet/copy.svg" alt="copy" />
+				<button class="flex items-center space-x-1">
+					<input autocomplete="off" name="reflink" value="https://demo.chyip.com/ethnicfinance2/?reg=zzzzz" class="pointer-events-none bg-transparent gold" id="copy-input" />
+					<img class="copy" src="img/cabinet/copy.svg" alt="copy" id="copy" />
 				</button>
 			</div>
 			<nav class="cabinet__aside-menu">
@@ -179,9 +186,15 @@
 									</ul>
 								</div>
 								<ul data-tabs-body data-tabs-hash class="cabinetHome__yieldchart-tabsbodies">
-									<li>график 1</li>
-									<li>график 2</li>
-									<li>график 3</li>
+									<li>
+										<canvas id="myChart" width="400" height="200"></canvas>
+									</li>
+									<li>
+										<canvas id="myChart2" width="400" height="200"></canvas>
+									</li>
+									<li>
+										<canvas id="myChart3" width="400" height="200"></canvas>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -247,11 +260,11 @@
 										<span class="gold">1046.14</span>
 										<img src="img/cabinet/cg.svg" alt="pull-profit" />
 									</div>
-									<div class="pull__more">
-										<span></span>
-										<span></span>
-										<span></span>
-									</div>
+									<!--                                <div class="pull__more">-->
+									<!--                                    <span></span>-->
+									<!--                                    <span></span>-->
+									<!--                                    <span></span>-->
+									<!--                                </div>-->
 								</div>
 								<div class="pull__body">
 									<img src="img/cabinet/gold.svg" alt="pull-header" />
@@ -291,7 +304,7 @@
 							</li>
 							<li class="pulls__item pull">
 								<div class="pull__header">
-									<img src="img/cabinet/gold-3.svg" alt="pull-header" />
+									<img src="img/cabinet/gold.svg" alt="pull-header" />
 									<div class="pull__name grey-block-dark">
 										<span class="gold">Название пула</span>
 									</div>
@@ -309,14 +322,14 @@
 										<span class="gold">1046.14</span>
 										<img src="img/cabinet/cg.svg" alt="pull-profit" />
 									</div>
-									<div class="pull__more">
-										<span></span>
-										<span></span>
-										<span></span>
-									</div>
+									<!--                                <div class="pull__more">-->
+									<!--                                    <span></span>-->
+									<!--                                    <span></span>-->
+									<!--                                    <span></span>-->
+									<!--                                </div>-->
 								</div>
 								<div class="pull__body">
-									<img src="img/cabinet/gold-3.svg" alt="pull-header" />
+									<img src="img/cabinet/gold.svg" alt="pull-header" />
 									<div class="pull__table">
 										<div class="pull__column">
 											<span class="gold">Название пула</span>
@@ -353,7 +366,7 @@
 							</li>
 							<li class="pulls__item pull">
 								<div class="pull__header">
-									<img src="img/cabinet/gold-1.svg" alt="pull-header" />
+									<img src="img/cabinet/gold.svg" alt="pull-header" />
 									<div class="pull__name grey-block-dark">
 										<span class="gold">Название пула</span>
 									</div>
@@ -371,14 +384,14 @@
 										<span class="gold">1046.14</span>
 										<img src="img/cabinet/cg.svg" alt="pull-profit" />
 									</div>
-									<div class="pull__more">
-										<span></span>
-										<span></span>
-										<span></span>
-									</div>
+									<!--                                <div class="pull__more">-->
+									<!--                                    <span></span>-->
+									<!--                                    <span></span>-->
+									<!--                                    <span></span>-->
+									<!--                                </div>-->
 								</div>
 								<div class="pull__body">
-									<img src="img/cabinet/gold-1.svg" alt="pull-header" />
+									<img src="img/cabinet/gold.svg" alt="pull-header" />
 									<div class="pull__table">
 										<div class="pull__column">
 											<span class="gold">Название пула</span>
@@ -1228,9 +1241,9 @@
 			</main>
 			<footer class="footer">
 				<div class="footer__wrapper">
-					<div class="footer__logo">
+					<a href="index.html" class="footer__logo">
 						<img src="img/logo/logo.svg" alt="logo_footer" />
-					</div>
+					</a>
 					<nav class="footer__menu">
 						<ul>
 							<li><a href="https://www.ukgholding.com/about">О компании</a></li>
@@ -1246,14 +1259,6 @@
 						<a href="mailto:UKGholding@gmail.com" class="footer__contacts-email gold">
 							UKGholding@gmail.com
 						</a>
-					</div>
-					<div class="footer__feedback">
-						<div class="footer__feedback-title footer__title">Обратная связь</div>
-						<div class="footer__feedback-body">
-							Хочешь узнать о новинках? <br />
-							Все события, скидки,<br />
-							предложения и новости здесь
-						</div>
 					</div>
 					<div class="footer__social social">
 						<div class="footer__social-title social__title">Социальные сети</div>
@@ -1310,7 +1315,7 @@
 	</div>
 </div>
  -->
-	<script src="js/app.min.js?_v=20230727174621"></script>
+	<script src="js/app.min.js?_v=20230731124806"></script>
 </body>
 
 </html>
